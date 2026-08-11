@@ -22,7 +22,7 @@
 :root {
   /* Charte graphique Fratex */
   --color-primary: #014d35; /* Vert Sapin */
-  --color-primary-dark: #013a28;
+  --color-primary-dark: #014d35;
   --color-accent: #cfae78; /* Or */
   --color-gray: #939598;
   --color-bg: #faf8f5;
@@ -30,8 +30,8 @@
   --color-text: #1c1b19;
   --color-text-light: #55524c;
 
-  --font-heading: "Cormorant Garamond", sans-serif;
-  --font-body: "Nunito Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: "IBM Plex Serif", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-logo: "Ostrovsky";
   --container-width: 1200px;
   --radius: 3px;
@@ -60,8 +60,12 @@ a {
 }
 
 h1,
-h2,
 h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  line-height: 1.2;
+}
+h2 {
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.2;
@@ -81,7 +85,7 @@ h3 {
   /* Or (--color-accent) sur fond clair passe sous 3:1 de contraste :
      insuffisant en WCAG AA. On fonce le ton pour rester dans la charte
      tout en restant lisible. À valider avec la charte graphique. */
-  color: #8a6a3a;
+  color: var(--color-primary);
   font-weight: 700;
 }
 
@@ -338,6 +342,7 @@ input:focus-visible {
   max-width: 42ch;
   opacity: 0.92;
   font-size: 1.2rem;
+  color: var(--color-bg);
 }
 
 @media (min-width: 700px) {
@@ -623,8 +628,9 @@ input:focus-visible {
   }
 
   .devis-container p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     max-width: 60%;
+    font-weight: 400;
   }
 }
 
@@ -638,7 +644,7 @@ input:focus-visible {
   text-align: center;
 }
 .page-header .section-label {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 .page-header h1 {
   color: #fff;
