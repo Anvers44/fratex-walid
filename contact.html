@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – Fratex</title>
+    <meta
+      name="description"
+      content="Contactez Fratex pour équiper votre hôtel, restaurant ou établissement de santé en linge de maison professionnel : devis, délais, échantillons."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.fratex.dz/contact.html" />
+    <meta name="theme-color" content="#014D35" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Fratex" />
+    <meta property="og:title" content="Contact – Fratex" />
+    <meta
+      property="og:description"
+      content="Décrivez votre besoin, Fratex vous répond avec une proposition adaptée."
+    />
+    <meta property="og:url" content="https://www.fratex.dz/contact.html" />
+
+    <!-- TODO : ajouter un fichier favicon puis décommenter -->
+    <!-- <link rel="icon" href="/assets/picture/favicon.png" type="image/png" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">FRATEX</a>
+        <button
+          class="nav-toggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          &#9776;
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+          <button class="nav-close" aria-label="Fermer le menu">&times;</button>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="produits.html">Produits</a></li>
+            <li><a href="a-propos.html">A propos</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a class="btn-head" href="contact.html">Demander un devis</a>
+      </div>
+    </header>
+    <div class="nav-overlay"></div>
+
+    <main id="main">
+      <div class="page-header">
+        <div class="container">
+          <p class="section-label">Contact</p>
+          <h1>Parlons de votre projet textile.</h1>
+          <p>
+            Un hôtel, un restaurant, un établissement de santé à équiper ?
+            Décrivez-nous votre besoin, nous revenons vers vous avec une
+            proposition adaptée.
+          </p>
+        </div>
+      </div>
+
+      <section class="contact-section">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <h2>Nos coordonnées</h2>
+            <ul>
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:contact@fratex.dz">contact@fratex.dz</a>
+              </li>
+              <li>
+                <strong>Téléphone</strong>
+                <a href="tel:+213XXXXXXXXX">+213 XXX XXX XXX</a>
+              </li>
+              <li>
+                <strong>Adresse</strong>
+                Atelier Fratex — [adresse à compléter], Algérie
+              </li>
+              <li>
+                <strong>Horaires</strong>
+                Dimanche – Jeudi, 9h – 17h
+              </li>
+            </ul>
+            <p class="form-note">
+              Vous préférez appeler ou écrire directement ? Toutes les
+              coordonnées ci-dessus fonctionnent aussi bien pour une première
+              prise de contact que pour un suivi de commande.
+            </p>
+          </div>
+
+          <div class="contact-form">
+            <h2>Demande de devis</h2>
+            <form action="#" method="post">
+              <div class="form-field">
+                <label for="contact-name">Nom et prénom</label>
+                <input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="contact-company">Établissement / société</label>
+                <input
+                  id="contact-company"
+                  name="company"
+                  type="text"
+                  autocomplete="organization"
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="contact-email">Email</label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="contact-phone">Téléphone</label>
+                <input
+                  id="contact-phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="contact-subject">Univers concerné</label>
+                <select id="contact-subject" name="subject">
+                  <option value="lit">Linge de lit</option>
+                  <option value="bain">Linge de bain</option>
+                  <option value="table">Linge de table</option>
+                  <option value="accessoires">Accessoires</option>
+                  <option value="autre">Autre / je ne sais pas encore</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-message">Votre message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  required
+                  placeholder="Type d'établissement, volumes estimés, délais souhaités..."
+                ></textarea>
+              </div>
+
+              <button class="btn" type="submit">Envoyer la demande</button>
+              <p class="form-note">
+                Champs marqués obligatoires par défaut du navigateur. Aucune
+                donnée n'est transmise tant que ce formulaire n'est pas connecté
+                à un service d'envoi (voir note technique).
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Fratex</h4>
+            <ul>
+              <li><a href="a-propos.html">Notre atelier</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="cgv.html">CGV</a></li>
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Produits</h4>
+            <ul>
+              <li><a href="produits.html#linge-de-lit">Linge de lit</a></li>
+              <li><a href="produits.html#linge-de-bain">Linge de bain</a></li>
+              <li><a href="produits.html#art-de-table">Linge de table</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:contact@fratex.dz">contact@fratex.dz</a></li>
+              <li><a href="tel:+213XXXXXXXXX">+213 XXX XXX XXX</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Newsletter</h4>
+            <form class="newsletter-form" action="#" method="post">
+              <label class="visually-hidden" for="newsletter-email"
+                >Adresse email</label
+              >
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                placeholder="Votre email"
+                autocomplete="email"
+                required
+              />
+              <button type="submit">OK</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; <span data-year></span> Fratex — Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>
