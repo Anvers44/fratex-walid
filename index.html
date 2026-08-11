@@ -1,19 +1,82 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fratex - Walid</title>
+    <title>
+      Fratex – Linge de maison professionnel pour hôtellerie et restauration
+    </title>
+    <meta
+      name="description"
+      content="Fratex, atelier de couture spécialisé dans le linge de maison professionnel : linge de lit, de bain, de table et accessoires pour hôtels, restaurants et établissements de santé."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.fratex.dz/" />
+    <meta name="theme-color" content="#014D35" />
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Fratex" />
+    <meta
+      property="og:title"
+      content="Fratex – Linge de maison professionnel"
+    />
+    <meta
+      property="og:description"
+      content="Un partenaire textile pour l'hôtellerie, la restauration, la santé et l'événementiel."
+    />
+    <meta property="og:url" content="https://www.fratex.dz/" />
+    <meta
+      property="og:image"
+      content="https://www.fratex.dz/assets/picture/hero.avif"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Fratex – Linge de maison professionnel"
+    />
+    <meta
+      name="twitter:description"
+      content="Un partenaire textile pour l'hôtellerie, la restauration, la santé et l'événementiel."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.fratex.dz/assets/picture/hero.jpg"
+    />
+
+    <!-- TODO : ajouter un fichier favicon puis décommenter -->
+    <!-- <link rel="icon" href="/assets/picture/favicon.png" type="image/png" /> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/picture/hero.jpg"
+      fetchpriority="high"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Fratex",
+        "url": "https://www.fratex.dz/",
+        "description": "Atelier de couture spécialisé dans le linge de maison professionnel pour l'hôtellerie, la restauration et la santé.",
+        "email": "contact@fratex.dz"
+      }
+    </script>
   </head>
 
   <body>
+    <a class="skip-link" href="#main">Aller au contenu principal</a>
+
     <header class="site-header">
       <div class="container header-inner">
         <a class="logo" href="index.html">FRATEX</a>
@@ -21,32 +84,31 @@
           class="nav-toggle"
           aria-label="Ouvrir le menu"
           aria-expanded="false"
+          aria-controls="main-nav"
         >
           &#9776;
         </button>
-        <nav class="main-nav" aria-label="Navigation principale">
+        <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
           <button class="nav-close" aria-label="Fermer le menu">&times;</button>
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="produits.html">Produits</a></li>
             <li><a href="a-propos.html">A propos</a></li>
-            <li><a href="contact.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
 
-        <button class="btn-head">
-          <a href="contact.html">Demander un devis</a>
-        </button>
+        <a class="btn-head" href="contact.html">Demander un devis</a>
       </div>
     </header>
     <div class="nav-overlay"></div>
 
-    <main>
+    <main id="main">
       <!-- Hero -->
       <section class="hero">
         <div class="container hero-content">
           <p class="section-label">La maison comme un cadeau</p>
-          <h1>L’art de vivre, tissé avec soin.</h1>
+          <h1>L'art de vivre, tissé avec soin.</h1>
           <a href="produits.html" class="btn">Demander un devis</a>
         </div>
       </section>
@@ -60,43 +122,43 @@
           </div>
 
           <div class="category-grid">
-            <a href="produits.html#linge-de-lit" class="category-card">
+            <a href="produits.html#art-de-table" class="category-card">
               <img
                 src="assets/picture/cuisine.jpg"
-                alt="Cuisine Fratex"
+                alt="Linge de cuisine et arts de la table"
                 loading="lazy"
-                width="400"
-                height="530"
+                width="512"
+                height="341"
               />
               <span>Cuisine</span>
             </a>
-            <a href="produits.html#linge-de-bain" class="category-card">
+            <a href="produits.html#linge-de-lit" class="category-card">
               <img
                 src="assets/picture/Chambre.webp"
-                alt="Chambre Fratex"
+                alt="Linge de lit dans une chambre"
                 loading="lazy"
-                width="400"
-                height="530"
+                width="512"
+                height="341"
               />
               <span>Chambre</span>
             </a>
-            <a href="produits.html#art-de-table" class="category-card">
+            <a href="produits.html#linge-de-bain" class="category-card">
               <img
-                src="assets/picture/Bain.avif"
-                alt="Bain Fratex"
+                src="assets/picture/Bain.jpg"
+                alt="Linge de bain, serviettes et peignoirs"
                 loading="lazy"
-                width="400"
-                height="530"
+                width="512"
+                height="410"
               />
               <span>Bain</span>
             </a>
             <a href="produits.html#peignoirs" class="category-card">
               <img
-                src="assets/picture/Accessoires.avif"
-                alt="Accessoires Fratex"
+                src="assets/picture/Accessoires.jpg"
+                alt="Accessoires textiles Fratex"
                 loading="lazy"
-                width="400"
-                height="530"
+                width="512"
+                height="384"
               />
               <span>Accessoires</span>
             </a>
@@ -105,11 +167,11 @@
           <div class="category-grid2">
             <a href="produits.html#linge-de-lit" class="category-card">
               <img
-                src="assets/picture/geste.avif"
-                alt="Cuisine Fratex"
+                src="assets/picture/geste.jpg"
+                alt="Détail d'un geste artisanal sur du textile"
                 loading="lazy"
-                width="400"
-                height="530"
+                width="1024"
+                height="684"
               />
               <span class="span-blog">
                 <div>Les gestes du quotidien →</div>
@@ -118,14 +180,14 @@
             </a>
             <a href="produits.html#linge-de-bain" class="category-card">
               <img
-                src="assets/picture/texture.avif"
-                alt="Chambre Fratex"
+                src="assets/picture/texture.jpg"
+                alt="Gros plan sur une texture de tissu"
                 loading="lazy"
-                width="400"
-                height="530"
+                width="1024"
+                height="683"
               />
               <span class="span-blog">
-                <div>Textures d’exception →</div>
+                <div>Textures d'exception →</div>
                 <button>NOUVEAUTÉ</button>
               </span>
             </a>
@@ -178,29 +240,41 @@
       </section>
 
       <!-- Partenaire-->
-      <section>
+      <section aria-labelledby="partenaire-title">
         <div class="Partenaire-container">
           <div class="img-Partenaire">
-            <img src="./assets/picture/conton.webp" alt="tissu en conton" />
+            <img
+              src="./assets/picture/conton.webp"
+              alt="Fil de coton, matière première textile"
+              loading="lazy"
+              width="1024"
+              height="683"
+            />
           </div>
           <div class="text-partenaire">
-            <h3>Un partenaire textile à vos côtés.</h3>
+            <h3 id="partenaire-title">Un partenaire textile à vos côtés.</h3>
             <ol>
-              <li>Qualité technique</li>
-              <p>
-                Matières sélectionnées, grammages maîtrisés et finition pensée
-                pour durer.
-              </p>
-              <li>Fiabilité logistique</li>
-              <p>
-                Des conditionnements adaptés et une organisation capable de
-                suivre vos volumes.
-              </p>
-              <li>Accompagnement B2B</li>
-              <p>
-                Un interlocuteur pour cadrer votre besoin, sans catalogue grand
-                public ni prix affichés.
-              </p>
+              <li>
+                <strong>Qualité technique</strong>
+                <p>
+                  Matières sélectionnées, grammages maîtrisés et finition pensée
+                  pour durer.
+                </p>
+              </li>
+              <li>
+                <strong>Fiabilité logistique</strong>
+                <p>
+                  Des conditionnements adaptés et une organisation capable de
+                  suivre vos volumes.
+                </p>
+              </li>
+              <li>
+                <strong>Accompagnement B2B</strong>
+                <p>
+                  Un interlocuteur pour cadrer votre besoin, sans catalogue
+                  grand public ni prix affichés.
+                </p>
+              </li>
             </ol>
           </div>
         </div>
@@ -215,7 +289,7 @@
               Décrivez votre activité, vos volumes et vos contraintes. Fratex
               vous accompagne avec une proposition adaptée.
             </p>
-            <button class="btn-head">Demander un devis</button>
+            <a class="btn-head" href="contact.html">Demander un devis</a>
           </div>
         </div>
       </section>
@@ -234,26 +308,31 @@
           <div>
             <h4>Produits</h4>
             <ul>
-              <li><a href="produits.html">Linge de lit</a></li>
-              <li><a href="produits.html">Linge de bain</a></li>
-              <li><a href="produits.html">Linge de table</a></li>
+              <li><a href="produits.html#linge-de-lit">Linge de lit</a></li>
+              <li><a href="produits.html#linge-de-bain">Linge de bain</a></li>
+              <li><a href="produits.html#art-de-table">Linge de table</a></li>
             </ul>
           </div>
           <div>
             <h4>Contact</h4>
             <ul>
-              <li>contact@fratex.dz</li>
-              <li>+213 XXX XXX XXX</li>
+              <li><a href="mailto:contact@fratex.dz">contact@fratex.dz</a></li>
+              <li><a href="tel:+213XXXXXXXXX">+213 XXX XXX XXX</a></li>
             </ul>
           </div>
           <div>
             <h4>Newsletter</h4>
             <form class="newsletter-form" action="#" method="post">
+              <label class="visually-hidden" for="newsletter-email"
+                >Adresse email</label
+              >
               <input
+                id="newsletter-email"
                 type="email"
+                name="email"
                 placeholder="Votre email"
+                autocomplete="email"
                 required
-                aria-label="Adresse email"
               />
               <button type="submit">OK</button>
             </form>
