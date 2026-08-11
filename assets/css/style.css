@@ -492,7 +492,6 @@ h3 {
 .environements-card h3 {
   font-size: 2rem;
   font-weight: 700;
-  height: 33%;
 }
 @media (min-width: 900px) {
   .environements-grid {
@@ -508,7 +507,6 @@ h3 {
 
 .Partenaire-container {
   width: 100vw;
-  height: 45vh;
   display: flex;
   flex-direction: column;
   padding: 3rem 0;
@@ -576,30 +574,44 @@ h3 {
 .devis-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .devis-container p {
   font-size: 1rem;
   font-weight: 700;
   color: var(--color-primary);
-  max-width: 50%;
+  padding-bottom: 1.5rem;
   text-align: center;
-
-  padding: 1rem;
 }
 
 .devis-container h2 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: var(--color-primary);
   font-family: var(--font-body);
-  max-width: 70%;
   text-align: center;
   font-weight: 800;
+  padding-bottom: 1.5rem;
 }
-.devis-container {
-  padding-bottom: 3rem;
+
+@media (min-width: 900px) {
+  .devis-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+
+  .devis-container h2 {
+    font-size: 3rem;
+    max-width: 70%;
+  }
+
+  .devis-container p {
+    font-size: 1.5rem;
+    max-width: 60%;
+  }
 }
 
 /* =========================================================
