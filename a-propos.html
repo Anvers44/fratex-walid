@@ -28,10 +28,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/a-propos.css" />
   </head>
 
   <body>
@@ -64,40 +65,55 @@
     <div class="nav-overlay"></div>
 
     <main id="main">
-      <div class="page-header">
-        <div class="container">
-          <p class="section-label">A propos</p>
-          <h1>L'atelier Fratex</h1>
+      <!-- HERO -->
+      <section class="about-hero">
+        <div class="container about-hero-content">
+          <p class="section-label">L'atelier</p>
+          <h1>Un savoir-faire textile mis au service de l'accueil.</h1>
         </div>
-      </div>
+      </section>
 
-      <section class="prose-section">
+      <!-- LEAD -->
+      <section class="about-lead-section">
         <div class="container">
           <p class="about-lead">
-            Couture & confection : un savoir-faire textile mis au service des
-            professionnels de l'accueil.
+            Couture &amp; confection : la rigueur d'un métier d'artisan, la
+            fiabilité d'un partenaire B2B.
           </p>
+        </div>
+      </section>
 
-          <div class="prose">
-            <h2>Notre métier</h2>
-            <p>
-              Fratex est un atelier de couture spécialisé dans le linge de
-              maison professionnel. Nous concevons et confectionnons du linge de
-              lit, de bain et de table pensé pour un usage intensif : hôtels,
-              restaurants, établissements de santé et organisateurs
-              d'événements.
-            </p>
-            <p>
-              Contrairement à un catalogue grand public, notre offre s'adresse
-              exclusivement aux professionnels : pas de prix affichés en ligne,
-              mais un interlocuteur qui prend le temps de cadrer votre besoin —
-              volumes, contraintes de blanchisserie, délais, budget — avant de
-              proposer une solution.
-            </p>
+      <!-- MÉTIER -->
+      <section class="about-prose-section">
+        <div class="container about-prose">
+          <h2>Notre métier</h2>
+          <p>
+            Fratex est un atelier de couture spécialisé dans le linge de maison
+            professionnel. Nous concevons et confectionnons du linge de lit, de
+            bain et de table pensé pour un usage intensif : hôtels, restaurants,
+            établissements de santé et organisateurs d'événements.
+          </p>
+          <p>
+            Contrairement à un catalogue grand public, notre offre s'adresse
+            exclusivement aux professionnels : pas de prix affichés en ligne,
+            mais un interlocuteur qui prend le temps de cadrer votre besoin —
+            volumes, contraintes de blanchisserie, délais, budget — avant de
+            proposer une solution.
+          </p>
+        </div>
+      </section>
+
+      <!-- VALEURS -->
+      <section class="about-values-section">
+        <div class="container">
+          <div class="section-title">
+            <p class="section-label">CE QUI NOUS GUIDE</p>
+            <h2>Trois engagements, une méthode.</h2>
           </div>
 
-          <div class="about-values">
+          <div class="about-values-grid">
             <div class="about-value-card">
+              <span class="value-num">01</span>
               <h3>Qualité technique</h3>
               <p>
                 Matières sélectionnées, grammages maîtrisés et finitions pensées
@@ -105,6 +121,7 @@
               </p>
             </div>
             <div class="about-value-card">
+              <span class="value-num">02</span>
               <h3>Fiabilité logistique</h3>
               <p>
                 Des conditionnements adaptés et une organisation capable de
@@ -113,6 +130,7 @@
               </p>
             </div>
             <div class="about-value-card">
+              <span class="value-num">03</span>
               <h3>Accompagnement B2B</h3>
               <p>
                 Un seul interlocuteur du premier échange à la livraison, pour
@@ -120,34 +138,156 @@
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="prose">
-            <h2>Nos environnements</h2>
-            <p>
-              Nous équipons aussi bien des hôtels que des restaurants, des
-              établissements de santé et des structures événementielles, chacun
-              avec ses propres contraintes de propreté, de résistance et de
-              présentation.
-            </p>
+      <!-- SPLIT : travailler avec Fratex -->
+      <section class="about-split" aria-labelledby="collab-title">
+        <div class="about-split-img">
+          <img
+            src="./assets/picture/texture.jpg"
+            alt="Gros plan sur une texture de tissu Fratex"
+            loading="lazy"
+            width="1024"
+            height="683"
+          />
+        </div>
+        <div class="about-split-text">
+          <h2 id="collab-title">Travailler avec Fratex</h2>
+          <p>
+            Chaque collaboration démarre par un échange sur votre activité, vos
+            volumes et vos contraintes. Nous vous revenons ensuite avec une
+            proposition adaptée — sans engagement.
+          </p>
+          <a class="btn" href="contact.html">Demander un devis</a>
+        </div>
+      </section>
 
-            <h2>Travailler avec Fratex</h2>
-            <p>
-              Chaque collaboration démarre par un échange sur votre activité,
-              vos volumes et vos contraintes. Nous vous revenons ensuite avec
-              une proposition adaptée — sans engagement.
-            </p>
+      <!-- ENVIRONNEMENTS -->
+      <section class="about-environments-section">
+        <div class="container">
+          <div class="section-title">
+            <p class="section-label">NOS ENVIRONNEMENTS</p>
+            <h2>Chaque terrain, ses contraintes.</h2>
           </div>
+
+          <ul class="about-environments-list">
+            <li>
+              <div>
+                <span class="env-num">01</span>
+                <h3>Hôtellerie</h3>
+              </div>
+              <p>
+                Des gammes qui maintiennent confort, tenue et qualité de
+                présentation à chaque rotation.
+              </p>
+            </li>
+            <li>
+              <div>
+                <span class="env-num">02</span>
+                <h3>Restauration</h3>
+              </div>
+              <p>
+                Le textile de table et de cuisine adapté à un usage intensif et
+                à une présentation exigeante.
+              </p>
+            </li>
+            <li>
+              <div>
+                <span class="env-num">03</span>
+                <h3>Santé &amp; soins</h3>
+              </div>
+              <p>
+                Des solutions fiables pour les contraintes de propreté, de
+                résistance et de renouvellement.
+              </p>
+            </li>
+            <li>
+              <div>
+                <span class="env-num">04</span>
+                <h3>Événementiel</h3>
+              </div>
+              <p>
+                Une réponse souple aux volumes, aux échéances et aux codes de
+                vos réceptions.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="about-cta">
+        <div class="container">
+          <p class="section-label">VOTRE BESOIN, NOTRE RÉPONSE</p>
+          <h2>Vous équipez un établissement ? Parlons textile.</h2>
+          <a class="btn btn-gold" href="contact.html">Demander un devis</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
+      <span class="footer-watermark" aria-hidden="true">FRATEX</span>
       <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="logo-footer">FRATEX</a>
+            <p class="footer-tagline">
+              Couture &amp; Confection — l'art de vivre, tissé avec soin.
+            </p>
+            <!-- TODO : remplacer par les vrais liens de contact rapide si besoin -->
+            <div class="footer-social">
+              <a
+                href="mailto:contact@fratex.dz"
+                aria-label="Écrire à Fratex par email"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2 5h20v14H2z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <path
+                    d="M3 6l9 7 9-7"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="tel:+213XXXXXXXXX" aria-label="Appeler Fratex">
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5 4h3.5l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5l1.5-2 4 1.5V19a2 2 0 0 1-2 2C10.5 21 3 13.5 3 6a2 2 0 0 1 2-2z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div class="footer-grid">
           <div>
             <h4>Fratex</h4>
             <ul>
-              <li><a href="a-propos.html">Notre atelier</a></li>
+              <li>
+                <a href="a-propos.html" aria-current="page">Notre atelier</a>
+              </li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="cgv.html">CGV</a></li>
               <li><a href="mentions-legales.html">Mentions légales</a></li>
@@ -168,8 +308,9 @@
               <li><a href="tel:+213XXXXXXXXX">+213 XXX XXX XXX</a></li>
             </ul>
           </div>
-          <div>
+          <div class="footer-newsletter">
             <h4>Newsletter</h4>
+            <p>Les actualités de l'atelier, sans spam.</p>
             <form class="newsletter-form" action="#" method="post">
               <label class="visually-hidden" for="newsletter-email"
                 >Adresse email</label
@@ -186,8 +327,10 @@
             </form>
           </div>
         </div>
+
         <div class="footer-bottom">
-          &copy; <span data-year></span> Fratex — Tous droits réservés.
+          <p>&copy; <span data-year></span> Fratex — Tous droits réservés.</p>
+          <a class="back-to-top" href="#main">Haut de page ↑</a>
         </div>
       </div>
     </footer>

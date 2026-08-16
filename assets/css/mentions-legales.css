@@ -1,0 +1,68 @@
+/*
+   FRATEX — mentions-legales.css
+   Styles propres à la page Mentions légales (mentions-legales.html) uniquement.
+   Charge base.css au préalable pour les variables, le header et le footer.
+*/
+
+.page-header {
+  background: var(--color-primary-dark);
+  color: #fff;
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+}
+.page-header .section-label {
+  color: var(--color-accent-soft);
+}
+.page-header h1 {
+  color: #fff;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
+}
+.page-header p {
+  max-width: 50ch;
+  margin: 1rem auto 0;
+  opacity: 0.9;
+}
+
+@media (min-width: 700px) {
+  .page-header h1 {
+    font-size: 3rem;
+  }
+}
+
+.prose-section {
+  padding: 3rem 0 4rem;
+}
+.prose {
+  max-width: 72ch;
+  margin: 0 auto;
+}
+.prose h2 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin: 2.2rem 0 0.85rem;
+}
+.prose h2:first-child {
+  margin-top: 0;
+}
+.prose p {
+  margin-bottom: 1rem;
+  color: var(--color-text-light);
+}
+.prose ul {
+  margin: 0 0 1rem 1.2rem;
+  color: var(--color-text-light);
+}
+.prose li {
+  margin-bottom: 0.4rem;
+}
+.prose strong {
+  color: var(--color-text);
+}
+.form-note {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-top: 0.75rem;
+}

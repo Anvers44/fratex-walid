@@ -28,10 +28,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
   </head>
 
   <body>
@@ -64,8 +65,9 @@
     <div class="nav-overlay"></div>
 
     <main id="main">
-      <div class="page-header">
-        <div class="container">
+      <!-- HERO -->
+      <section class="contact-hero">
+        <div class="container contact-hero-content">
           <p class="section-label">Contact</p>
           <h1>Parlons de votre projet textile.</h1>
           <p>
@@ -74,13 +76,107 @@
             proposition adaptée.
           </p>
         </div>
-      </div>
+      </section>
 
+      <!-- CARTES RAPIDES -->
+      <section class="contact-quickcards">
+        <div class="container quickcards-grid">
+          <div class="quickcard">
+            <span class="quickcard-icon">
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2 5h20v14H2z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M3 6l9 7 9-7"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:contact@fratex.dz">contact@fratex.dz</a>
+            </div>
+          </div>
+          <div class="quickcard">
+            <span class="quickcard-icon">
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 4h3.5l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5l1.5-2 4 1.5V19a2 2 0 0 1-2 2C10.5 21 3 13.5 3 6a2 2 0 0 1 2-2z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3>Téléphone</h3>
+              <a href="tel:+213XXXXXXXXX">+213 XXX XXX XXX</a>
+            </div>
+          </div>
+          <div class="quickcard">
+            <span class="quickcard-icon">
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="12"
+                  cy="9.5"
+                  r="2.2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3>Horaires</h3>
+              <p>Dimanche – Jeudi, 9h – 17h</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INFOS + FORMULAIRE -->
       <section class="contact-section">
         <div class="container contact-grid">
           <div class="contact-info">
             <h2>Nos coordonnées</h2>
-            <ul>
+            <p>
+              Vous préférez appeler ou écrire directement ? Toutes les
+              coordonnées ci-contre fonctionnent aussi bien pour une première
+              prise de contact que pour un suivi de commande.
+            </p>
+            <ul class="contact-info-list">
+              <li>
+                <strong>Adresse</strong>
+                Atelier Fratex — [adresse à compléter], Algérie
+              </li>
               <li>
                 <strong>Email</strong>
                 <a href="mailto:contact@fratex.dz">contact@fratex.dz</a>
@@ -89,65 +185,56 @@
                 <strong>Téléphone</strong>
                 <a href="tel:+213XXXXXXXXX">+213 XXX XXX XXX</a>
               </li>
-              <li>
-                <strong>Adresse</strong>
-                Atelier Fratex — [adresse à compléter], Algérie
-              </li>
-              <li>
-                <strong>Horaires</strong>
-                Dimanche – Jeudi, 9h – 17h
-              </li>
             </ul>
-            <p class="form-note">
-              Vous préférez appeler ou écrire directement ? Toutes les
-              coordonnées ci-dessus fonctionnent aussi bien pour une première
-              prise de contact que pour un suivi de commande.
-            </p>
           </div>
 
           <div class="contact-form">
             <h2>Demande de devis</h2>
             <form action="#" method="post">
-              <div class="form-field">
-                <label for="contact-name">Nom et prénom</label>
-                <input
-                  id="contact-name"
-                  name="name"
-                  type="text"
-                  autocomplete="name"
-                  required
-                />
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="contact-name">Nom et prénom</label>
+                  <input
+                    id="contact-name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-company">Établissement / société</label>
+                  <input
+                    id="contact-company"
+                    name="company"
+                    type="text"
+                    autocomplete="organization"
+                  />
+                </div>
               </div>
 
-              <div class="form-field">
-                <label for="contact-company">Établissement / société</label>
-                <input
-                  id="contact-company"
-                  name="company"
-                  type="text"
-                  autocomplete="organization"
-                />
-              </div>
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="contact-email">Email</label>
+                  <input
+                    id="contact-email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
 
-              <div class="form-field">
-                <label for="contact-email">Email</label>
-                <input
-                  id="contact-email"
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  required
-                />
-              </div>
-
-              <div class="form-field">
-                <label for="contact-phone">Téléphone</label>
-                <input
-                  id="contact-phone"
-                  name="phone"
-                  type="tel"
-                  autocomplete="tel"
-                />
+                <div class="form-field">
+                  <label for="contact-phone">Téléphone</label>
+                  <input
+                    id="contact-phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                  />
+                </div>
               </div>
 
               <div class="form-field">
@@ -184,13 +271,66 @@
     </main>
 
     <footer class="site-footer">
+      <span class="footer-watermark" aria-hidden="true">FRATEX</span>
       <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="logo-footer">FRATEX</a>
+            <p class="footer-tagline">
+              Couture &amp; Confection — l'art de vivre, tissé avec soin.
+            </p>
+            <!-- TODO : remplacer par les vrais liens de contact rapide si besoin -->
+            <div class="footer-social">
+              <a
+                href="mailto:contact@fratex.dz"
+                aria-label="Écrire à Fratex par email"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2 5h20v14H2z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <path
+                    d="M3 6l9 7 9-7"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="tel:+213XXXXXXXXX" aria-label="Appeler Fratex">
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5 4h3.5l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5l1.5-2 4 1.5V19a2 2 0 0 1-2 2C10.5 21 3 13.5 3 6a2 2 0 0 1 2-2z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div class="footer-grid">
           <div>
             <h4>Fratex</h4>
             <ul>
               <li><a href="a-propos.html">Notre atelier</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html" aria-current="page">Contact</a></li>
               <li><a href="cgv.html">CGV</a></li>
               <li><a href="mentions-legales.html">Mentions légales</a></li>
             </ul>
@@ -210,8 +350,9 @@
               <li><a href="tel:+213XXXXXXXXX">+213 XXX XXX XXX</a></li>
             </ul>
           </div>
-          <div>
+          <div class="footer-newsletter">
             <h4>Newsletter</h4>
+            <p>Les actualités de l'atelier, sans spam.</p>
             <form class="newsletter-form" action="#" method="post">
               <label class="visually-hidden" for="newsletter-email"
                 >Adresse email</label
@@ -228,8 +369,10 @@
             </form>
           </div>
         </div>
+
         <div class="footer-bottom">
-          &copy; <span data-year></span> Fratex — Tous droits réservés.
+          <p>&copy; <span data-year></span> Fratex — Tous droits réservés.</p>
+          <a class="back-to-top" href="#main">Haut de page ↑</a>
         </div>
       </div>
     </footer>

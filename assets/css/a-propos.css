@@ -1,0 +1,267 @@
+/*
+   FRATEX — a-propos.css
+   Styles propres à la page À propos (a-propos.html) uniquement.
+   Charge base.css au préalable pour les variables, le header et le footer.
+*/
+
+/* HERO */
+.about-hero {
+  position: relative;
+  min-height: 46vh;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  background: var(--color-primary) url("../picture/geste.jpg") center/cover
+    no-repeat;
+}
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 30, 20, 0.35) 0%,
+    rgba(1, 30, 20, 0.82) 100%
+  );
+}
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 0 2.5rem;
+}
+.about-hero .section-label {
+  color: var(--color-accent-soft);
+}
+.about-hero h1 {
+  color: #fff;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 2.4rem;
+  margin-top: 0.5rem;
+  max-width: 16ch;
+}
+
+@media (min-width: 700px) {
+  .about-hero {
+    min-height: 52vh;
+  }
+  .about-hero h1 {
+    font-size: 3.6rem;
+  }
+}
+
+/* Titre de section, réutilisé pour Valeurs / Environnements */
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+.section-title h2 {
+  font-style: italic;
+  font-size: 1.9rem;
+  color: var(--color-primary);
+  margin-top: 0.4rem;
+}
+
+/* LEAD — citation éditoriale */
+.about-lead-section {
+  padding: 3.5rem 0 1rem;
+}
+.about-lead {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  max-width: 34ch;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+@media (min-width: 700px) {
+  .about-lead {
+    font-size: 2rem;
+    max-width: 26ch;
+  }
+}
+
+/* MÉTIER — texte courant */
+.about-prose-section {
+  padding: 2.5rem 0;
+}
+.about-prose {
+  max-width: 68ch;
+  margin: 0 auto;
+}
+.about-prose h2 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-bottom: 0.9rem;
+}
+.about-prose p {
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+.about-prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* VALEURS — cartes sombres, numérotées, façon "environnements" */
+.about-values-section {
+  padding: 3rem 0;
+}
+.about-values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.about-value-card {
+  border-radius: var(--radius);
+  background: var(--color-primary-dark);
+  color: var(--color-bg);
+  padding: 2rem;
+}
+.about-value-card .value-num {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--color-accent);
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.about-value-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+.about-value-card p {
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 900px) {
+  .about-values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* SPLIT — image + texte, façon "partenaire" de la home */
+.about-split {
+  display: flex;
+  flex-direction: column;
+}
+.about-split-img {
+  overflow: hidden;
+}
+.about-split-img img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+}
+.about-split-text {
+  padding: 2.5rem;
+  background: var(--color-bg-alt);
+}
+.about-split-text h2 {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.about-split-text p {
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+.about-split-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 900px) {
+  .about-split {
+    flex-direction: row;
+    min-height: 26rem;
+  }
+  .about-split-img,
+  .about-split-text {
+    width: 50%;
+  }
+  .about-split-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.5rem 4rem;
+  }
+}
+
+/* ENVIRONNEMENTS — liste numérotée éditoriale */
+.about-environments-section {
+  padding: 3rem 0 3.5rem;
+}
+.about-environments-list {
+  list-style: none;
+  border-top: 1px solid #e7ded0;
+}
+.about-environments-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e7ded0;
+}
+.about-environments-list .env-num {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.about-environments-list h3 {
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+}
+.about-environments-list p {
+  color: var(--color-text-light);
+  font-size: 0.92rem;
+}
+
+@media (min-width: 700px) {
+  .about-environments-list li {
+    align-items: center;
+  }
+  .about-environments-list h3 {
+    display: inline-block;
+    width: 12rem;
+    margin-bottom: 0;
+  }
+  .about-environments-list li > div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+/* CTA — bandeau final */
+.about-cta {
+  background: var(--color-primary);
+  padding: 3rem 0;
+  text-align: center;
+  color: #fff;
+}
+.about-cta p.section-label {
+  color: var(--color-accent-soft);
+}
+.about-cta h2 {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.8rem;
+  margin: 0.75rem auto 1.5rem;
+  max-width: 24ch;
+}
+
+@media (min-width: 700px) {
+  .about-cta h2 {
+    font-size: 2.4rem;
+  }
+}
