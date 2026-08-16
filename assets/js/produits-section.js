@@ -50,8 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   function init(data, sections) {
-    document.title =
-      data.section.name + " – Produits Fratex";
+    document.title = data.section.name + " – Produits Fratex";
 
     if (els.hero) {
       els.hero.style.backgroundImage =
@@ -144,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
           cat.slug +
           '">' +
           Catalogue.escapeHtml(cat.name) +
-          "</button>"
+          "</button>",
       );
     });
     els.categoryChips.innerHTML = chips.join("");
@@ -189,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
           sub.slug +
           '">' +
           Catalogue.escapeHtml(sub.name) +
-          "</button>"
+          "</button>",
       );
     });
     els.subcategoryChips.innerHTML = chips.join("");
@@ -227,7 +226,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (els.count) {
       els.count.innerHTML =
-        "<strong>" + results.length + "</strong> produit" +
+        "<strong>" +
+        results.length +
+        "</strong> produit" +
         (results.length > 1 ? "s" : "");
     }
 

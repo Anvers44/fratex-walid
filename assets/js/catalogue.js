@@ -111,14 +111,12 @@ var Catalogue = (function () {
 
     var sameSub = pool.filter(function (p) {
       return (
-        p.category === product.category &&
-        p.subcategory === product.subcategory
+        p.category === product.category && p.subcategory === product.subcategory
       );
     });
     var sameCat = pool.filter(function (p) {
       return (
-        p.category === product.category &&
-        p.subcategory !== product.subcategory
+        p.category === product.category && p.subcategory !== product.subcategory
       );
     });
     var rest = pool.filter(function (p) {

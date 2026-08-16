@@ -1,0 +1,249 @@
+{
+  "section": {
+    "slug": "hotellerie",
+    "name": "Hôtellerie",
+    "tagline": "Le linge qui tient la cadence de vos rotations.",
+    "description": "Linge de lit, de bain et accessoires de protection pensés pour l'exigence hôtelière : qualité, résistance au lavage industriel et présentation constante.",
+    "hero_image": "assets/picture/Chambre.webp"
+  },
+  "categories": [
+    {
+      "slug": "linge-de-lit",
+      "name": "Linge de lit",
+      "description": "Draps, housses de couette et taies pensés pour la rotation hôtelière.",
+      "image": "assets/picture/Chambre.webp",
+      "subcategories": [
+        {
+          "slug": "draps-housse",
+          "name": "Draps housse"
+        },
+        {
+          "slug": "housses-de-couette",
+          "name": "Housses de couette"
+        }
+      ]
+    },
+    {
+      "slug": "linge-de-bain",
+      "name": "Linge de bain",
+      "description": "Serviettes, peignoirs et tapis de bain pour un confort hôtelier constant.",
+      "image": "assets/picture/Bain.jpg",
+      "subcategories": [
+        {
+          "slug": "serviettes",
+          "name": "Serviettes"
+        },
+        {
+          "slug": "peignoirs",
+          "name": "Peignoirs"
+        }
+      ]
+    },
+    {
+      "slug": "protection-literie",
+      "name": "Protection literie",
+      "description": "Protège-matelas et protège-oreillers pour prolonger la durée de vie de la literie.",
+      "image": "assets/picture/texture.jpg",
+      "subcategories": [
+        {
+          "slug": "protege-matelas",
+          "name": "Protège-matelas"
+        },
+        {
+          "slug": "protege-oreillers",
+          "name": "Protège-oreillers"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "hot-lit-001",
+      "slug": "hot-lit-001",
+      "name": "Drap housse percale 200 fils",
+      "category": "linge-de-lit",
+      "subcategory": "draps-housse",
+      "image": "assets/picture/Chambre.webp",
+      "short_description": "Drap housse en percale de coton, résistant aux lavages fréquents en blanchisserie industrielle.",
+      "description": "Drap housse en percale de coton, résistant aux lavages fréquents en blanchisserie industrielle. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Percale de coton",
+        "Grammage": "130 g/m²",
+        "Coloris": "Blanc, Ivoire"
+      },
+      "tags": ["coton", "percale", "blanc"]
+    },
+    {
+      "id": "hot-lit-002",
+      "slug": "hot-lit-002",
+      "name": "Drap housse satin de coton",
+      "category": "linge-de-lit",
+      "subcategory": "draps-housse",
+      "image": "assets/picture/Bain.jpg",
+      "short_description": "Drap housse satiné offrant un tombé haut de gamme pour les chambres premium.",
+      "description": "Drap housse satiné offrant un tombé haut de gamme pour les chambres premium. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Satin de coton",
+        "Grammage": "150 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "satin", "premium"]
+    },
+    {
+      "id": "hot-lit-003",
+      "slug": "hot-lit-003",
+      "name": "Housse de couette satin de coton",
+      "category": "linge-de-lit",
+      "subcategory": "housses-de-couette",
+      "image": "assets/picture/cuisine.jpg",
+      "short_description": "Housse de couette assortie aux draps, coutures renforcées pour usage intensif.",
+      "description": "Housse de couette assortie aux draps, coutures renforcées pour usage intensif. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Satin de coton",
+        "Grammage": "150 g/m²",
+        "Coloris": "Blanc, Ivoire"
+      },
+      "tags": ["coton", "satin", "blanc"]
+    },
+    {
+      "id": "hot-lit-004",
+      "slug": "hot-lit-004",
+      "name": "Housse de couette percale unie",
+      "category": "linge-de-lit",
+      "subcategory": "housses-de-couette",
+      "image": "assets/picture/Accessoires.jpg",
+      "short_description": "Housse de couette percale, entretien facile et bonne tenue en blanchisserie.",
+      "description": "Housse de couette percale, entretien facile et bonne tenue en blanchisserie. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Percale de coton",
+        "Grammage": "130 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "percale"]
+    },
+    {
+      "id": "hot-bain-001",
+      "slug": "hot-bain-001",
+      "name": "Serviette de toilette 500 g/m²",
+      "category": "linge-de-bain",
+      "subcategory": "serviettes",
+      "image": "assets/picture/texture.jpg",
+      "short_description": "Serviette éponge dense, absorbance élevée et bonne résistance aux lavages répétés.",
+      "description": "Serviette éponge dense, absorbance élevée et bonne résistance aux lavages répétés. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton éponge",
+        "Grammage": "500 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "eponge", "blanc"]
+    },
+    {
+      "id": "hot-bain-002",
+      "slug": "hot-bain-002",
+      "name": "Drap de bain 550 g/m²",
+      "category": "linge-de-bain",
+      "subcategory": "serviettes",
+      "image": "assets/picture/conton.webp",
+      "short_description": "Grand drap de bain éponge pour les gammes hôtelières haut de gamme.",
+      "description": "Grand drap de bain éponge pour les gammes hôtelières haut de gamme. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton éponge",
+        "Grammage": "550 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "eponge", "premium"]
+    },
+    {
+      "id": "hot-bain-003",
+      "slug": "hot-bain-003",
+      "name": "Peignoir col châle",
+      "category": "linge-de-bain",
+      "subcategory": "peignoirs",
+      "image": "assets/picture/geste.jpg",
+      "short_description": "Peignoir éponge col châle, coupe confortable pour un usage spa et hôtellerie.",
+      "description": "Peignoir éponge col châle, coupe confortable pour un usage spa et hôtellerie. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton éponge",
+        "Grammage": "400 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "peignoir"]
+    },
+    {
+      "id": "hot-bain-004",
+      "slug": "hot-bain-004",
+      "name": "Peignoir capuche",
+      "category": "linge-de-bain",
+      "subcategory": "peignoirs",
+      "image": "assets/picture/Chambre.webp",
+      "short_description": "Peignoir à capuche, adapté aux espaces bien-être et suites hôtelières.",
+      "description": "Peignoir à capuche, adapté aux espaces bien-être et suites hôtelières. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton éponge",
+        "Grammage": "380 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "peignoir", "spa"]
+    },
+    {
+      "id": "hot-prot-001",
+      "slug": "hot-prot-001",
+      "name": "Protège-matelas imperméable",
+      "category": "protection-literie",
+      "subcategory": "protege-matelas",
+      "image": "assets/picture/Bain.jpg",
+      "short_description": "Protège-matelas imperméable et respirant, housse à élastique intégral.",
+      "description": "Protège-matelas imperméable et respirant, housse à élastique intégral. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton / membrane imperméable",
+        "Entretien": "Lavable en machine"
+      },
+      "tags": ["protection", "impermeable"]
+    },
+    {
+      "id": "hot-prot-002",
+      "slug": "hot-prot-002",
+      "name": "Protège-matelas molletonné",
+      "category": "protection-literie",
+      "subcategory": "protege-matelas",
+      "image": "assets/picture/cuisine.jpg",
+      "short_description": "Protège-matelas molletonné pour un confort supplémentaire et une meilleure isolation.",
+      "description": "Protège-matelas molletonné pour un confort supplémentaire et une meilleure isolation. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton molletonné",
+        "Entretien": "Lavable en machine"
+      },
+      "tags": ["protection", "confort"]
+    },
+    {
+      "id": "hot-prot-003",
+      "slug": "hot-prot-003",
+      "name": "Protège-oreiller coton",
+      "category": "protection-literie",
+      "subcategory": "protege-oreillers",
+      "image": "assets/picture/Accessoires.jpg",
+      "short_description": "Protège-oreiller en coton, barrière contre les acariens et la transpiration.",
+      "description": "Protège-oreiller en coton, barrière contre les acariens et la transpiration. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Entretien": "Lavable en machine"
+      },
+      "tags": ["protection", "coton"]
+    },
+    {
+      "id": "hot-prot-004",
+      "slug": "hot-prot-004",
+      "name": "Protège-oreiller imperméable",
+      "category": "protection-literie",
+      "subcategory": "protege-oreillers",
+      "image": "assets/picture/texture.jpg",
+      "short_description": "Protège-oreiller imperméable, indispensable pour l'hygiène en établissement.",
+      "description": "Protège-oreiller imperméable, indispensable pour l'hygiène en établissement. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton / membrane imperméable",
+        "Entretien": "Lavable en machine"
+      },
+      "tags": ["protection", "impermeable"]
+    }
+  ]
+}

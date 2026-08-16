@@ -1,37 +1,32 @@
 [
   {
-    "id": "hotellerie",
-    "label": "Hôtellerie",
-    "tagline": "Des gammes qui tiennent la rotation, chambre après chambre.",
-    "image": "assets/picture/Chambre.webp",
-    "file": "assets/data/products-hotellerie.json"
+    "slug": "hotellerie",
+    "name": "Hôtellerie",
+    "tagline": "Le linge qui tient la cadence de vos rotations.",
+    "image": "assets/picture/Chambre.webp"
   },
   {
-    "id": "restauration",
-    "label": "Restauration",
-    "tagline": "Le textile de salle et de cuisine, pensé pour l'usage intensif.",
-    "image": "assets/picture/cuisine.jpg",
-    "file": "assets/data/products-restauration.json"
+    "slug": "restauration",
+    "name": "Restauration",
+    "tagline": "Le textile de salle et de cuisine, prêt pour le rythme du service.",
+    "image": "assets/picture/cuisine.jpg"
   },
   {
-    "id": "maison",
-    "label": "Maison",
-    "tagline": "Le linge de maison Fratex, pour les particuliers exigeants.",
-    "image": "assets/picture/conton.webp",
-    "file": "assets/data/products-maison.json"
+    "slug": "maison",
+    "name": "Maison",
+    "tagline": "Le savoir-faire Fratex, à la maison aussi.",
+    "image": "assets/picture/geste.jpg"
   },
   {
-    "id": "sante",
-    "label": "Santé & soin",
-    "tagline": "Des solutions fiables pour la propreté et le renouvellement.",
-    "image": "assets/picture/Bain.jpg",
-    "file": "assets/data/products-sante.json"
+    "slug": "sante-soin",
+    "name": "Santé & soin",
+    "tagline": "Des textiles fiables pour les contraintes du soin.",
+    "image": "assets/picture/texture.jpg"
   },
   {
-    "id": "evenement",
-    "label": "Événement",
-    "tagline": "Une réponse souple aux volumes et aux codes de vos réceptions.",
-    "image": "assets/picture/texture.jpg",
-    "file": "assets/data/products-evenement.json"
+    "slug": "evenement",
+    "name": "Événement",
+    "tagline": "Une réponse textile souple pour vos réceptions.",
+    "image": "assets/picture/geste.jpg"
   }
 ]

@@ -1,0 +1,253 @@
+{
+  "section": {
+    "slug": "maison",
+    "name": "Maison",
+    "tagline": "Le savoir-faire Fratex, à la maison aussi.",
+    "description": "Linge de lit, de bain et de table pour équiper la maison avec la même exigence de qualité que nos gammes professionnelles.",
+    "hero_image": "assets/picture/geste.jpg"
+  },
+  "categories": [
+    {
+      "slug": "linge-de-lit-maison",
+      "name": "Linge de lit",
+      "description": "Parures et housses pour équiper la maison avec le même savoir-faire que nos gammes professionnelles.",
+      "image": "assets/picture/Chambre.webp",
+      "subcategories": [
+        {
+          "slug": "parures-de-lit",
+          "name": "Parures de lit"
+        },
+        {
+          "slug": "taies-oreiller",
+          "name": "Taies d'oreiller"
+        }
+      ]
+    },
+    {
+      "slug": "linge-de-bain-maison",
+      "name": "Linge de bain",
+      "description": "Serviettes et tapis de bain pour un confort quotidien à la maison.",
+      "image": "assets/picture/Bain.jpg",
+      "subcategories": [
+        {
+          "slug": "serviettes-maison",
+          "name": "Serviettes"
+        },
+        {
+          "slug": "tapis-de-bain",
+          "name": "Tapis de bain"
+        }
+      ]
+    },
+    {
+      "slug": "linge-de-table-maison",
+      "name": "Linge de table",
+      "description": "Nappes et sets de table pour les tables familiales et les réceptions.",
+      "image": "assets/picture/geste.jpg",
+      "subcategories": [
+        {
+          "slug": "nappes-maison",
+          "name": "Nappes"
+        },
+        {
+          "slug": "sets-maison",
+          "name": "Sets de table"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "mai-lit-001",
+      "slug": "mai-lit-001",
+      "name": "Parure de lit coton uni",
+      "category": "linge-de-lit-maison",
+      "subcategory": "parures-de-lit",
+      "image": "assets/picture/Accessoires.jpg",
+      "short_description": "Parure de lit en coton, confort et simplicité d'entretien au quotidien.",
+      "description": "Parure de lit en coton, confort et simplicité d'entretien au quotidien. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "140 g/m²",
+        "Coloris": "Blanc, Gris, Taupe"
+      },
+      "tags": ["coton", "parure"]
+    },
+    {
+      "id": "mai-lit-002",
+      "slug": "mai-lit-002",
+      "name": "Parure de lit satin de coton",
+      "category": "linge-de-lit-maison",
+      "subcategory": "parures-de-lit",
+      "image": "assets/picture/texture.jpg",
+      "short_description": "Parure satinée pour une chambre à l'allure plus soignée.",
+      "description": "Parure satinée pour une chambre à l'allure plus soignée. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Satin de coton",
+        "Grammage": "150 g/m²",
+        "Coloris": "Blanc, Ivoire"
+      },
+      "tags": ["coton", "satin"]
+    },
+    {
+      "id": "mai-lit-003",
+      "slug": "mai-lit-003",
+      "name": "Taie d'oreiller unie",
+      "category": "linge-de-lit-maison",
+      "subcategory": "taies-oreiller",
+      "image": "assets/picture/conton.webp",
+      "short_description": "Taie d'oreiller coton, coloris assortis aux parures de la gamme.",
+      "description": "Taie d'oreiller coton, coloris assortis aux parures de la gamme. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "140 g/m²",
+        "Coloris": "Blanc, Gris"
+      },
+      "tags": ["coton", "taie"]
+    },
+    {
+      "id": "mai-lit-004",
+      "slug": "mai-lit-004",
+      "name": "Lot de 2 taies percale",
+      "category": "linge-de-lit-maison",
+      "subcategory": "taies-oreiller",
+      "image": "assets/picture/geste.jpg",
+      "short_description": "Lot de deux taies en percale, toucher doux et bonne tenue au lavage.",
+      "description": "Lot de deux taies en percale, toucher doux et bonne tenue au lavage. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Percale de coton",
+        "Grammage": "130 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "percale"]
+    },
+    {
+      "id": "mai-bain-001",
+      "slug": "mai-bain-001",
+      "name": "Serviette de toilette maison",
+      "category": "linge-de-bain-maison",
+      "subcategory": "serviettes-maison",
+      "image": "assets/picture/Chambre.webp",
+      "short_description": "Serviette éponge moelleuse pour un usage quotidien à la maison.",
+      "description": "Serviette éponge moelleuse pour un usage quotidien à la maison. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton éponge",
+        "Grammage": "450 g/m²",
+        "Coloris": "Blanc, Gris, Taupe"
+      },
+      "tags": ["coton", "eponge"]
+    },
+    {
+      "id": "mai-bain-002",
+      "slug": "mai-bain-002",
+      "name": "Drap de bain maison",
+      "category": "linge-de-bain-maison",
+      "subcategory": "serviettes-maison",
+      "image": "assets/picture/Bain.jpg",
+      "short_description": "Grand drap de bain éponge, confort enveloppant après le bain.",
+      "description": "Grand drap de bain éponge, confort enveloppant après le bain. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton éponge",
+        "Grammage": "500 g/m²",
+        "Coloris": "Blanc, Gris"
+      },
+      "tags": ["coton", "eponge"]
+    },
+    {
+      "id": "mai-bain-003",
+      "slug": "mai-bain-003",
+      "name": "Tapis de bain coton",
+      "category": "linge-de-bain-maison",
+      "subcategory": "tapis-de-bain",
+      "image": "assets/picture/cuisine.jpg",
+      "short_description": "Tapis de bain épais et absorbant, base antidérapante.",
+      "description": "Tapis de bain épais et absorbant, base antidérapante. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "1200 g/m²",
+        "Coloris": "Blanc, Gris, Taupe"
+      },
+      "tags": ["coton", "tapis"]
+    },
+    {
+      "id": "mai-bain-004",
+      "slug": "mai-bain-004",
+      "name": "Tapis de bain contour",
+      "category": "linge-de-bain-maison",
+      "subcategory": "tapis-de-bain",
+      "image": "assets/picture/Accessoires.jpg",
+      "short_description": "Tapis de bain contour, forme adaptée au pied de la baignoire.",
+      "description": "Tapis de bain contour, forme adaptée au pied de la baignoire. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "1200 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "tapis"]
+    },
+    {
+      "id": "mai-table-001",
+      "slug": "mai-table-001",
+      "name": "Nappe coton famille",
+      "category": "linge-de-table-maison",
+      "subcategory": "nappes-maison",
+      "image": "assets/picture/texture.jpg",
+      "short_description": "Nappe en coton pour la table familiale, facile d'entretien.",
+      "description": "Nappe en coton pour la table familiale, facile d'entretien. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "180 g/m²",
+        "Coloris": "Blanc, Naturel"
+      },
+      "tags": ["coton", "nappe"]
+    },
+    {
+      "id": "mai-table-002",
+      "slug": "mai-table-002",
+      "name": "Nappe enduite anti-taches",
+      "category": "linge-de-table-maison",
+      "subcategory": "nappes-maison",
+      "image": "assets/picture/conton.webp",
+      "short_description": "Nappe enduite pour un usage quotidien sans souci de taches.",
+      "description": "Nappe enduite pour un usage quotidien sans souci de taches. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton enduit",
+        "Grammage": "220 g/m²",
+        "Coloris": "Blanc, Beige"
+      },
+      "tags": ["coton", "enduite"]
+    },
+    {
+      "id": "mai-table-003",
+      "slug": "mai-table-003",
+      "name": "Set de table coton",
+      "category": "linge-de-table-maison",
+      "subcategory": "sets-maison",
+      "image": "assets/picture/geste.jpg",
+      "short_description": "Set de table en coton pour habiller la table du quotidien.",
+      "description": "Set de table en coton pour habiller la table du quotidien. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "180 g/m²",
+        "Coloris": "Blanc, Naturel"
+      },
+      "tags": ["coton", "set-de-table"]
+    },
+    {
+      "id": "mai-table-004",
+      "slug": "mai-table-004",
+      "name": "Set de table réception",
+      "category": "linge-de-table-maison",
+      "subcategory": "sets-maison",
+      "image": "assets/picture/Chambre.webp",
+      "short_description": "Set de table plus soigné pour les repas de réception.",
+      "description": "Set de table plus soigné pour les repas de réception. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton damassé",
+        "Grammage": "200 g/m²",
+        "Coloris": "Blanc, Ivoire"
+      },
+      "tags": ["coton", "damasse"]
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "section": {
+    "slug": "restauration",
+    "name": "Restauration",
+    "tagline": "Le textile de salle et de cuisine, prêt pour le rythme du service.",
+    "description": "Nappage, linge de table et linge de cuisine adaptés à un usage intensif et à une présentation exigeante en salle comme en cuisine.",
+    "hero_image": "assets/picture/cuisine.jpg"
+  },
+  "categories": [
+    {
+      "slug": "linge-de-table",
+      "name": "Linge de table",
+      "description": "Nappes, serviettes et sets pour une présentation soignée en salle.",
+      "image": "assets/picture/cuisine.jpg",
+      "subcategories": [
+        {
+          "slug": "nappes",
+          "name": "Nappes"
+        },
+        {
+          "slug": "serviettes-de-table",
+          "name": "Serviettes de table"
+        }
+      ]
+    },
+    {
+      "slug": "linge-de-cuisine",
+      "name": "Linge de cuisine",
+      "description": "Torchons, tabliers et maniques résistants à un usage intensif en cuisine.",
+      "image": "assets/picture/texture.jpg",
+      "subcategories": [
+        {
+          "slug": "torchons",
+          "name": "Torchons"
+        },
+        {
+          "slug": "tabliers",
+          "name": "Tabliers"
+        }
+      ]
+    },
+    {
+      "slug": "accessoires-salle",
+      "name": "Accessoires de salle",
+      "description": "Sets de table et chemins de table pour habiller vos espaces de restauration.",
+      "image": "assets/picture/geste.jpg",
+      "subcategories": [
+        {
+          "slug": "sets-de-table",
+          "name": "Sets de table"
+        },
+        {
+          "slug": "chemins-de-table",
+          "name": "Chemins de table"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "res-table-001",
+      "slug": "res-table-001",
+      "name": "Nappe polycoton unie",
+      "category": "linge-de-table",
+      "subcategory": "nappes",
+      "image": "assets/picture/conton.webp",
+      "short_description": "Nappe polycoton facile d'entretien, bonne tenue au repassage et au lavage fréquent.",
+      "description": "Nappe polycoton facile d'entretien, bonne tenue au repassage et au lavage fréquent. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Polycoton",
+        "Grammage": "200 g/m²",
+        "Coloris": "Blanc, Ivoire"
+      },
+      "tags": ["polycoton", "nappe"]
+    },
+    {
+      "id": "res-table-002",
+      "slug": "res-table-002",
+      "name": "Nappe coton damassé",
+      "category": "linge-de-table",
+      "subcategory": "nappes",
+      "image": "assets/picture/geste.jpg",
+      "short_description": "Nappe en coton damassé pour une présentation haut de gamme en salle.",
+      "description": "Nappe en coton damassé pour une présentation haut de gamme en salle. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton damassé",
+        "Grammage": "220 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "damasse", "premium"]
+    },
+    {
+      "id": "res-table-003",
+      "slug": "res-table-003",
+      "name": "Serviette de table coton",
+      "category": "linge-de-table",
+      "subcategory": "serviettes-de-table",
+      "image": "assets/picture/Chambre.webp",
+      "short_description": "Serviette de table en coton, pliage net et bonne absorption.",
+      "description": "Serviette de table en coton, pliage net et bonne absorption. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "180 g/m²",
+        "Coloris": "Blanc, Ivoire"
+      },
+      "tags": ["coton", "serviette"]
+    },
+    {
+      "id": "res-table-004",
+      "slug": "res-table-004",
+      "name": "Serviette de table polycoton",
+      "category": "linge-de-table",
+      "subcategory": "serviettes-de-table",
+      "image": "assets/picture/Bain.jpg",
+      "short_description": "Serviette polycoton, alternative économique pour un usage quotidien.",
+      "description": "Serviette polycoton, alternative économique pour un usage quotidien. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Polycoton",
+        "Grammage": "170 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["polycoton", "serviette"]
+    },
+    {
+      "id": "res-cuis-001",
+      "slug": "res-cuis-001",
+      "name": "Torchon nid d'abeille",
+      "category": "linge-de-cuisine",
+      "subcategory": "torchons",
+      "image": "assets/picture/cuisine.jpg",
+      "short_description": "Torchon nid d'abeille très absorbant, référence en cuisine professionnelle.",
+      "description": "Torchon nid d'abeille très absorbant, référence en cuisine professionnelle. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "220 g/m²",
+        "Coloris": "Blanc, Écru"
+      },
+      "tags": ["coton", "torchon"]
+    },
+    {
+      "id": "res-cuis-002",
+      "slug": "res-cuis-002",
+      "name": "Torchon microfibre",
+      "category": "linge-de-cuisine",
+      "subcategory": "torchons",
+      "image": "assets/picture/Accessoires.jpg",
+      "short_description": "Torchon microfibre séchage rapide, adapté aux passages fréquents.",
+      "description": "Torchon microfibre séchage rapide, adapté aux passages fréquents. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Microfibre",
+        "Grammage": "200 g/m²",
+        "Coloris": "Gris"
+      },
+      "tags": ["microfibre", "torchon"]
+    },
+    {
+      "id": "res-cuis-003",
+      "slug": "res-cuis-003",
+      "name": "Tablier bavette coton",
+      "category": "linge-de-cuisine",
+      "subcategory": "tabliers",
+      "image": "assets/picture/texture.jpg",
+      "short_description": "Tablier bavette robuste avec poche, pensé pour un usage prolongé en cuisine.",
+      "description": "Tablier bavette robuste avec poche, pensé pour un usage prolongé en cuisine. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "260 g/m²",
+        "Coloris": "Noir, Blanc"
+      },
+      "tags": ["coton", "tablier"]
+    },
+    {
+      "id": "res-cuis-004",
+      "slug": "res-cuis-004",
+      "name": "Tablier de taille",
+      "category": "linge-de-cuisine",
+      "subcategory": "tabliers",
+      "image": "assets/picture/conton.webp",
+      "short_description": "Tablier de taille léger, confortable pour un service prolongé en salle.",
+      "description": "Tablier de taille léger, confortable pour un service prolongé en salle. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Polycoton",
+        "Grammage": "220 g/m²",
+        "Coloris": "Noir"
+      },
+      "tags": ["polycoton", "tablier"]
+    },
+    {
+      "id": "res-acc-001",
+      "slug": "res-acc-001",
+      "name": "Set de table jetable-réutilisable",
+      "category": "accessoires-salle",
+      "subcategory": "sets-de-table",
+      "image": "assets/picture/geste.jpg",
+      "short_description": "Set de table en tissu résistant, entretien simple entre chaque service.",
+      "description": "Set de table en tissu résistant, entretien simple entre chaque service. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Polycoton",
+        "Grammage": "180 g/m²",
+        "Coloris": "Blanc, Beige"
+      },
+      "tags": ["polycoton", "set-de-table"]
+    },
+    {
+      "id": "res-acc-002",
+      "slug": "res-acc-002",
+      "name": "Set de table lin naturel",
+      "category": "accessoires-salle",
+      "subcategory": "sets-de-table",
+      "image": "assets/picture/Chambre.webp",
+      "short_description": "Set de table effet lin pour une présentation soignée en salle.",
+      "description": "Set de table effet lin pour une présentation soignée en salle. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton / effet lin",
+        "Grammage": "200 g/m²",
+        "Coloris": "Naturel"
+      },
+      "tags": ["lin", "set-de-table"]
+    },
+    {
+      "id": "res-acc-003",
+      "slug": "res-acc-003",
+      "name": "Chemin de table coton",
+      "category": "accessoires-salle",
+      "subcategory": "chemins-de-table",
+      "image": "assets/picture/Bain.jpg",
+      "short_description": "Chemin de table en coton pour structurer et habiller vos nappages.",
+      "description": "Chemin de table en coton pour structurer et habiller vos nappages. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "200 g/m²",
+        "Coloris": "Blanc, Ivoire"
+      },
+      "tags": ["coton", "chemin-de-table"]
+    },
+    {
+      "id": "res-acc-004",
+      "slug": "res-acc-004",
+      "name": "Chemin de table damassé",
+      "category": "accessoires-salle",
+      "subcategory": "chemins-de-table",
+      "image": "assets/picture/cuisine.jpg",
+      "short_description": "Chemin de table damassé pour les services événementiels en restauration.",
+      "description": "Chemin de table damassé pour les services événementiels en restauration. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton damassé",
+        "Grammage": "220 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "damasse"]
+    }
+  ]
+}

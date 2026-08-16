@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var subName = Catalogue.subcategoryName(
       data,
       product.category,
-      product.subcategory
+      product.subcategory,
     );
 
     document.title = product.name + " – Fratex";

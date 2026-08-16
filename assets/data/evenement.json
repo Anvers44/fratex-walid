@@ -1,0 +1,243 @@
+{
+  "section": {
+    "slug": "evenement",
+    "name": "Événement",
+    "tagline": "Une réponse textile souple pour vos réceptions.",
+    "description": "Nappage, housses de mobilier et décoration textile pour habiller vos événements, mariages et séminaires.",
+    "hero_image": "assets/picture/geste.jpg"
+  },
+  "categories": [
+    {
+      "slug": "nappage-evenementiel",
+      "name": "Nappage événementiel",
+      "description": "Nappes et chemins de table pour réceptions, mariages et séminaires.",
+      "image": "assets/picture/geste.jpg",
+      "subcategories": [
+        {
+          "slug": "nappes-evenement",
+          "name": "Nappes"
+        },
+        {
+          "slug": "chemins-evenement",
+          "name": "Chemins de table"
+        }
+      ]
+    },
+    {
+      "slug": "housses-mobilier",
+      "name": "Housses de mobilier",
+      "description": "Housses de chaise et nœuds pour habiller vos espaces de réception.",
+      "image": "assets/picture/texture.jpg",
+      "subcategories": [
+        {
+          "slug": "housses-de-chaise",
+          "name": "Housses de chaise"
+        },
+        {
+          "slug": "noeuds-decoratifs",
+          "name": "Nœuds décoratifs"
+        }
+      ]
+    },
+    {
+      "slug": "decoration-textile",
+      "name": "Décoration textile",
+      "description": "Chemins et accessoires textiles pour la mise en scène de vos événements.",
+      "image": "assets/picture/conton.webp",
+      "subcategories": [
+        {
+          "slug": "voilages-decoratifs",
+          "name": "Voilages décoratifs"
+        },
+        {
+          "slug": "accessoires-deco",
+          "name": "Accessoires déco"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "evt-nap-001",
+      "slug": "evt-nap-001",
+      "name": "Nappe ronde événement",
+      "category": "nappage-evenementiel",
+      "subcategory": "nappes-evenement",
+      "image": "assets/picture/geste.jpg",
+      "short_description": "Nappe ronde grand format pour tables de réception, coloris unis.",
+      "description": "Nappe ronde grand format pour tables de réception, coloris unis. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Polycoton",
+        "Grammage": "200 g/m²",
+        "Coloris": "Blanc, Ivoire, Noir"
+      },
+      "tags": ["polycoton", "nappe", "evenement"]
+    },
+    {
+      "id": "evt-nap-002",
+      "slug": "evt-nap-002",
+      "name": "Nappe rectangulaire événement",
+      "category": "nappage-evenementiel",
+      "subcategory": "nappes-evenement",
+      "image": "assets/picture/Chambre.webp",
+      "short_description": "Nappe rectangulaire pour tables de conférence et buffets.",
+      "description": "Nappe rectangulaire pour tables de conférence et buffets. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Polycoton",
+        "Grammage": "200 g/m²",
+        "Coloris": "Blanc, Noir"
+      },
+      "tags": ["polycoton", "nappe", "evenement"]
+    },
+    {
+      "id": "evt-nap-003",
+      "slug": "evt-nap-003",
+      "name": "Chemin de table satin",
+      "category": "nappage-evenementiel",
+      "subcategory": "chemins-evenement",
+      "image": "assets/picture/Bain.jpg",
+      "short_description": "Chemin de table satiné pour souligner un nappage de réception.",
+      "description": "Chemin de table satiné pour souligner un nappage de réception. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Satin polyester",
+        "Coloris": "Or, Blanc, Noir"
+      },
+      "tags": ["satin", "chemin-de-table"]
+    },
+    {
+      "id": "evt-nap-004",
+      "slug": "evt-nap-004",
+      "name": "Chemin de table coton brodé",
+      "category": "nappage-evenementiel",
+      "subcategory": "chemins-evenement",
+      "image": "assets/picture/cuisine.jpg",
+      "short_description": "Chemin de table en coton avec finition brodée pour les réceptions soignées.",
+      "description": "Chemin de table en coton avec finition brodée pour les réceptions soignées. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton brodé",
+        "Coloris": "Blanc, Ivoire"
+      },
+      "tags": ["coton", "brode"]
+    },
+    {
+      "id": "evt-hou-001",
+      "slug": "evt-hou-001",
+      "name": "Housse de chaise universelle",
+      "category": "housses-mobilier",
+      "subcategory": "housses-de-chaise",
+      "image": "assets/picture/Accessoires.jpg",
+      "short_description": "Housse de chaise universelle, coupe ajustée pour un rendu net en salle.",
+      "description": "Housse de chaise universelle, coupe ajustée pour un rendu net en salle. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Polyester lycra",
+        "Coloris": "Blanc, Noir"
+      },
+      "tags": ["polyester", "housse"]
+    },
+    {
+      "id": "evt-hou-002",
+      "slug": "evt-hou-002",
+      "name": "Housse de chaise Chiavari",
+      "category": "housses-mobilier",
+      "subcategory": "housses-de-chaise",
+      "image": "assets/picture/texture.jpg",
+      "short_description": "Housse adaptée aux chaises Chiavari, finition événementielle.",
+      "description": "Housse adaptée aux chaises Chiavari, finition événementielle. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Polyester lycra",
+        "Coloris": "Blanc, Ivoire"
+      },
+      "tags": ["polyester", "housse"]
+    },
+    {
+      "id": "evt-hou-003",
+      "slug": "evt-hou-003",
+      "name": "Nœud de chaise satin",
+      "category": "housses-mobilier",
+      "subcategory": "noeuds-decoratifs",
+      "image": "assets/picture/conton.webp",
+      "short_description": "Nœud décoratif en satin pour habiller le dos des chaises.",
+      "description": "Nœud décoratif en satin pour habiller le dos des chaises. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Satin polyester",
+        "Coloris": "Or, Blanc, Noir, Bordeaux"
+      },
+      "tags": ["satin", "noeud"]
+    },
+    {
+      "id": "evt-hou-004",
+      "slug": "evt-hou-004",
+      "name": "Nœud de chaise organza",
+      "category": "housses-mobilier",
+      "subcategory": "noeuds-decoratifs",
+      "image": "assets/picture/geste.jpg",
+      "short_description": "Nœud en organza pour une touche légère et aérienne.",
+      "description": "Nœud en organza pour une touche légère et aérienne. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Organza",
+        "Coloris": "Blanc, Champagne"
+      },
+      "tags": ["organza", "noeud"]
+    },
+    {
+      "id": "evt-dec-001",
+      "slug": "evt-dec-001",
+      "name": "Voilage décoratif plafond",
+      "category": "decoration-textile",
+      "subcategory": "voilages-decoratifs",
+      "image": "assets/picture/Chambre.webp",
+      "short_description": "Voilage léger pour habiller plafonds et structures lors de réceptions.",
+      "description": "Voilage léger pour habiller plafonds et structures lors de réceptions. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Voile polyester",
+        "Coloris": "Blanc, Champagne"
+      },
+      "tags": ["voile", "decoration"]
+    },
+    {
+      "id": "evt-dec-002",
+      "slug": "evt-dec-002",
+      "name": "Voilage de fond de scène",
+      "category": "decoration-textile",
+      "subcategory": "voilages-decoratifs",
+      "image": "assets/picture/Bain.jpg",
+      "short_description": "Voilage large pour habiller un fond de scène ou une entrée de réception.",
+      "description": "Voilage large pour habiller un fond de scène ou une entrée de réception. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Voile polyester",
+        "Coloris": "Blanc, Noir"
+      },
+      "tags": ["voile", "decoration"]
+    },
+    {
+      "id": "evt-dec-003",
+      "slug": "evt-dec-003",
+      "name": "Chemin de chaise assorti",
+      "category": "decoration-textile",
+      "subcategory": "accessoires-deco",
+      "image": "assets/picture/cuisine.jpg",
+      "short_description": "Chemin de chaise assorti au nappage pour une déco cohérente.",
+      "description": "Chemin de chaise assorti au nappage pour une déco cohérente. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Satin polyester",
+        "Coloris": "Or, Blanc"
+      },
+      "tags": ["satin", "accessoire"]
+    },
+    {
+      "id": "evt-dec-004",
+      "slug": "evt-dec-004",
+      "name": "Rond de serviette textile",
+      "category": "decoration-textile",
+      "subcategory": "accessoires-deco",
+      "image": "assets/picture/Accessoires.jpg",
+      "short_description": "Rond de serviette textile, touche de finition pour un dressage de table soigné.",
+      "description": "Rond de serviette textile, touche de finition pour un dressage de table soigné. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Satin polyester",
+        "Coloris": "Or, Argent, Blanc"
+      },
+      "tags": ["satin", "accessoire"]
+    }
+  ]
+}
