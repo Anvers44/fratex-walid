@@ -1,0 +1,37 @@
+[
+  {
+    "id": "hotellerie",
+    "label": "Hôtellerie",
+    "tagline": "Des gammes qui tiennent la rotation, chambre après chambre.",
+    "image": "assets/picture/Chambre.webp",
+    "file": "assets/data/products-hotellerie.json"
+  },
+  {
+    "id": "restauration",
+    "label": "Restauration",
+    "tagline": "Le textile de salle et de cuisine, pensé pour l'usage intensif.",
+    "image": "assets/picture/cuisine.jpg",
+    "file": "assets/data/products-restauration.json"
+  },
+  {
+    "id": "maison",
+    "label": "Maison",
+    "tagline": "Le linge de maison Fratex, pour les particuliers exigeants.",
+    "image": "assets/picture/conton.webp",
+    "file": "assets/data/products-maison.json"
+  },
+  {
+    "id": "sante",
+    "label": "Santé & soin",
+    "tagline": "Des solutions fiables pour la propreté et le renouvellement.",
+    "image": "assets/picture/Bain.jpg",
+    "file": "assets/data/products-sante.json"
+  },
+  {
+    "id": "evenement",
+    "label": "Événement",
+    "tagline": "Une réponse souple aux volumes et aux codes de vos réceptions.",
+    "image": "assets/picture/texture.jpg",
+    "file": "assets/data/products-evenement.json"
+  }
+]

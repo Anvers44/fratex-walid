@@ -1,0 +1,221 @@
+{
+  "section": "restauration",
+  "sectionLabel": "Restauration",
+  "sectionTagline": "Le textile de salle et de cuisine, pensé pour l'usage intensif.",
+  "categories": [
+    {
+      "id": "linge-de-table",
+      "label": "Linge de table",
+      "subcategories": [
+        {
+          "id": "nappes",
+          "label": "Nappes"
+        },
+        {
+          "id": "serviettes-de-table",
+          "label": "Serviettes de table"
+        }
+      ]
+    },
+    {
+      "id": "linge-de-cuisine",
+      "label": "Linge de cuisine",
+      "subcategories": [
+        {
+          "id": "torchons",
+          "label": "Torchons"
+        },
+        {
+          "id": "tabliers",
+          "label": "Tabliers"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "nappe-ronde-blanche",
+      "name": "Nappe ronde blanche",
+      "category": "linge-de-table",
+      "subcategory": "nappes",
+      "image": "assets/picture/texture.jpg",
+      "shortDescription": "Nappe ronde pour salle de restaurant, tenue nette en service.",
+      "description": "Tissu résistant aux taches courantes de salle, pensé pour un repassage industriel efficace.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Diamètre",
+          "value": "180 à 240 cm"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage + repassage industriel"
+        }
+      ]
+    },
+    {
+      "id": "nappe-rectangulaire-couleur",
+      "name": "Nappe rectangulaire couleur",
+      "category": "linge-de-table",
+      "subcategory": "nappes",
+      "image": "assets/picture/texture.jpg",
+      "shortDescription": "Nappe rectangulaire disponible en plusieurs teintes pour s'accorder au décor de salle.",
+      "description": "Coloris stables au lavage, adaptés à une utilisation quotidienne en salle de restaurant.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Format",
+          "value": "140x240 cm et +"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel"
+        }
+      ]
+    },
+    {
+      "id": "serviette-table-blanche",
+      "name": "Serviette de table blanche",
+      "category": "linge-de-table",
+      "subcategory": "serviettes-de-table",
+      "image": "assets/picture/texture.jpg",
+      "shortDescription": "Serviette de table classique, pliage net et tenue en service.",
+      "description": "Grammage équilibré entre tenue en main et confort, pour un pliage propre en salle.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Format",
+          "value": "45x45 cm"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel"
+        }
+      ]
+    },
+    {
+      "id": "serviette-table-couleur",
+      "name": "Serviette de table couleur",
+      "category": "linge-de-table",
+      "subcategory": "serviettes-de-table",
+      "image": "assets/picture/texture.jpg",
+      "shortDescription": "Version colorée pour accompagner les nappes teintées.",
+      "description": "Teintes assorties aux nappes couleur pour une mise en place cohérente en salle.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Format",
+          "value": "45x45 cm"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel"
+        }
+      ]
+    },
+    {
+      "id": "torchon-nid-abeille",
+      "name": "Torchon nid d'abeille",
+      "category": "linge-de-cuisine",
+      "subcategory": "torchons",
+      "image": "assets/picture/cuisine.jpg",
+      "shortDescription": "Torchon absorbant pour un usage intensif en cuisine professionnelle.",
+      "description": "Tissage nid d'abeille qui optimise l'absorption tout en séchant rapidement entre deux services.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "100% coton"
+        },
+        {
+          "label": "Format",
+          "value": "50x70 cm"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 60-90°C"
+        }
+      ]
+    },
+    {
+      "id": "torchon-microfibre",
+      "name": "Torchon microfibre",
+      "category": "linge-de-cuisine",
+      "subcategory": "torchons",
+      "image": "assets/picture/cuisine.jpg",
+      "shortDescription": "Torchon microfibre pour le nettoyage de surfaces et plans de travail.",
+      "description": "Fibres fines qui captent poussière et graisse sans laisser de peluches sur les surfaces.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Microfibre"
+        },
+        {
+          "label": "Format",
+          "value": "40x60 cm"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel"
+        }
+      ]
+    },
+    {
+      "id": "tablier-bavette-cuisine",
+      "name": "Tablier bavette cuisine",
+      "category": "linge-de-cuisine",
+      "subcategory": "tabliers",
+      "image": "assets/picture/cuisine.jpg",
+      "shortDescription": "Tablier de cuisine résistant, bretelles réglables.",
+      "description": "Coupe pensée pour un usage debout prolongé en cuisine, avec poche avant pratique.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Réglage",
+          "value": "Bretelles et taille ajustables"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel"
+        }
+      ]
+    },
+    {
+      "id": "tablier-mi-long",
+      "name": "Tablier mi-long service",
+      "category": "linge-de-cuisine",
+      "subcategory": "tabliers",
+      "image": "assets/picture/cuisine.jpg",
+      "shortDescription": "Tablier mi-long adapté au personnel de salle comme de cuisine.",
+      "description": "Format polyvalent qui convient aussi bien en salle qu'en cuisine selon les besoins de l'équipe.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Longueur",
+          "value": "Mi-long"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel"
+        }
+      ]
+    }
+  ]
+}

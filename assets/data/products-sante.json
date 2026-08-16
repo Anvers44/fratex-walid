@@ -1,0 +1,221 @@
+{
+  "section": "sante",
+  "sectionLabel": "Santé & soin",
+  "sectionTagline": "Des solutions fiables pour les contraintes de propreté et de renouvellement.",
+  "categories": [
+    {
+      "id": "linge-medicalise",
+      "label": "Linge médicalisé",
+      "subcategories": [
+        {
+          "id": "draps-housse",
+          "label": "Draps housse"
+        },
+        {
+          "id": "aleses",
+          "label": "Alèses"
+        }
+      ]
+    },
+    {
+      "id": "tenues-professionnelles",
+      "label": "Tenues professionnelles",
+      "subcategories": [
+        {
+          "id": "blouses",
+          "label": "Blouses"
+        },
+        {
+          "id": "tuniques",
+          "label": "Tuniques"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "drap-housse-medicalise",
+      "name": "Drap housse médicalisé",
+      "category": "linge-medicalise",
+      "subcategory": "draps-housse",
+      "image": "assets/picture/Bain.jpg",
+      "shortDescription": "Drap housse renforcé pour lits médicalisés, résistant aux lavages fréquents.",
+      "description": "Élastique renforcé et coutures solides pour supporter des cycles de lavage à haute température.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Tailles",
+          "value": "Lits médicalisés standard"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 90°C"
+        }
+      ]
+    },
+    {
+      "id": "drap-housse-impermeable",
+      "name": "Drap housse imperméable",
+      "category": "linge-medicalise",
+      "subcategory": "draps-housse",
+      "image": "assets/picture/Bain.jpg",
+      "shortDescription": "Version avec face imperméable pour une protection renforcée.",
+      "description": "Face technique imperméable associée à un dessus confortable, pour limiter les changes fréquents.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton + membrane technique"
+        },
+        {
+          "label": "Protection",
+          "value": "Face imperméable"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 90°C"
+        }
+      ]
+    },
+    {
+      "id": "alese-plate-coton",
+      "name": "Alèse plate coton",
+      "category": "linge-medicalise",
+      "subcategory": "aleses",
+      "image": "assets/picture/Bain.jpg",
+      "shortDescription": "Alèse de protection en coton pour usage quotidien.",
+      "description": "Complément simple et lavable pour protéger le drap housse en usage courant.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "100% coton"
+        },
+        {
+          "label": "Format",
+          "value": "90x90 cm et +"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel"
+        }
+      ]
+    },
+    {
+      "id": "alese-absorbante",
+      "name": "Alèse absorbante renforcée",
+      "category": "linge-medicalise",
+      "subcategory": "aleses",
+      "image": "assets/picture/Bain.jpg",
+      "shortDescription": "Alèse à pouvoir absorbant renforcé pour les besoins spécifiques.",
+      "description": "Couches absorbantes intégrées pour un meilleur confort et une protection prolongée.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton multicouche"
+        },
+        {
+          "label": "Absorption",
+          "value": "Renforcée"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 90°C"
+        }
+      ]
+    },
+    {
+      "id": "blouse-manches-courtes",
+      "name": "Blouse manches courtes",
+      "category": "tenues-professionnelles",
+      "subcategory": "blouses",
+      "image": "assets/picture/geste.jpg",
+      "shortDescription": "Blouse professionnelle manches courtes pour le personnel soignant.",
+      "description": "Coupe pratique et tissu facile d'entretien pour un usage quotidien en établissement de soin.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Tailles",
+          "value": "XS à XXL"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 60-90°C"
+        }
+      ]
+    },
+    {
+      "id": "blouse-fermeture-pression",
+      "name": "Blouse fermeture pression",
+      "category": "tenues-professionnelles",
+      "subcategory": "blouses",
+      "image": "assets/picture/geste.jpg",
+      "shortDescription": "Blouse à fermeture pression pour un enfilage rapide.",
+      "description": "Fermeture pression pratique pour les changements fréquents entre deux services.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Fermeture",
+          "value": "Pressions"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel"
+        }
+      ]
+    },
+    {
+      "id": "tunique-col-v",
+      "name": "Tunique col V",
+      "category": "tenues-professionnelles",
+      "subcategory": "tuniques",
+      "image": "assets/picture/geste.jpg",
+      "shortDescription": "Tunique col V, coupe confortable pour la journée de travail.",
+      "description": "Coupe droite et matière respirante, pensée pour un usage prolongé en poste.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Tailles",
+          "value": "XS à XXL"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 60°C"
+        }
+      ]
+    },
+    {
+      "id": "tunique-poches-multiples",
+      "name": "Tunique à poches multiples",
+      "category": "tenues-professionnelles",
+      "subcategory": "tuniques",
+      "image": "assets/picture/geste.jpg",
+      "shortDescription": "Tunique avec poches supplémentaires pour le petit matériel.",
+      "description": "Poches additionnelles pratiques pour le personnel ayant besoin d'avoir du matériel à portée de main.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton/polyester"
+        },
+        {
+          "label": "Poches",
+          "value": "3 à 4"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel"
+        }
+      ]
+    }
+  ]
+}

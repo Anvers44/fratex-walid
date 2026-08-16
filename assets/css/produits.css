@@ -1,0 +1,165 @@
+/*
+   FRATEX — produits.css
+   Styles propres à la page d'accueil produits (produits.html) :
+   vue d'ensemble des 5 univers (sections).
+   Charge base.css au préalable pour les variables, le header et le footer.
+*/
+
+/* HERO */
+.produits-hero {
+  position: relative;
+  min-height: 42vh;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  background: var(--color-primary) url("../picture/hero.jpg") center/cover
+    no-repeat;
+}
+.produits-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 30, 20, 0.35) 0%,
+    rgba(1, 30, 20, 0.82) 100%
+  );
+}
+.produits-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 0 2.5rem;
+}
+.produits-hero .section-label {
+  color: var(--color-accent-soft);
+}
+.produits-hero h1 {
+  color: #fff;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 2.1rem;
+  margin: 0.5rem 0 0.75rem;
+  max-width: 18ch;
+}
+.produits-hero p {
+  max-width: 50ch;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+@media (min-width: 700px) {
+  .produits-hero {
+    min-height: 46vh;
+  }
+  .produits-hero h1 {
+    font-size: 3rem;
+  }
+}
+
+/* GRILLE DES UNIVERS */
+.sections-overview {
+  padding: 3rem 0 4rem;
+}
+.sections-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+.section-card {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--color-bg-alt);
+  display: block;
+}
+.section-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.section-card:hover img {
+  transform: scale(1.05);
+}
+.section-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+}
+.section-card-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 1.25rem;
+  color: #fff;
+}
+.section-card-body h2 {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+}
+.section-card-body p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  max-width: 32ch;
+}
+.section-card-arrow {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.section-card:hover .section-card-arrow {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: rotate(45deg);
+}
+.section-card-arrow svg {
+  width: 16px;
+  height: 16px;
+  stroke: #fff;
+}
+
+@media (min-width: 700px) {
+  .sections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-card:first-child {
+    grid-column: span 2;
+    aspect-ratio: 16 / 7;
+  }
+}
+
+@media (min-width: 900px) {
+  .sections-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section-card:first-child {
+    grid-column: span 3;
+  }
+}
+
+.sections-loading,
+.sections-error {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--color-text-light);
+}

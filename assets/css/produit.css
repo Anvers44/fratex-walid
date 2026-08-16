@@ -1,0 +1,211 @@
+/*
+   FRATEX — produit.css
+   Styles propres à la fiche produit (produit.html) : fil d'ariane,
+   visuel + informations, caractéristiques, produits similaires.
+   Charge base.css au préalable pour les variables, le header et le footer.
+*/
+
+.breadcrumb {
+  padding: 1.25rem 0 0.5rem;
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+}
+.breadcrumb a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.breadcrumb .sep {
+  margin: 0 0.4rem;
+  opacity: 0.6;
+}
+
+/* FICHE PRODUIT */
+.product-detail {
+  padding: 1.5rem 0 3rem;
+}
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.product-visual {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--color-bg-alt);
+  aspect-ratio: 1 / 1;
+}
+.product-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info .product-cat-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.product-info h1 {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  margin-bottom: 0.9rem;
+  line-height: 1.25;
+}
+.product-info .product-lead {
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+}
+.product-info .product-description {
+  color: var(--color-text-light);
+  margin-bottom: 1.75rem;
+}
+
+.product-specs {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.75rem;
+  font-size: 0.9rem;
+}
+.product-specs tr {
+  border-bottom: 1px solid #e7ded0;
+}
+.product-specs tr:first-child {
+  border-top: 1px solid #e7ded0;
+}
+.product-specs th,
+.product-specs td {
+  text-align: left;
+  padding: 0.65rem 0;
+}
+.product-specs th {
+  width: 40%;
+  color: var(--color-text-light);
+  font-weight: 600;
+}
+.product-specs td {
+  color: var(--color-text);
+}
+
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+.product-tags span {
+  font-size: 0.75rem;
+  background: var(--color-bg-alt);
+  color: var(--color-text-light);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+.product-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+.product-cta .form-note {
+  width: 100%;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .product-detail-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: start;
+  }
+}
+
+/* PRODUITS SIMILAIRES */
+.related-section {
+  padding: 2.5rem 0 4rem;
+  border-top: 1px solid #e7ded0;
+}
+.related-section .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 1.5rem;
+}
+.related-section .section-title h2 {
+  font-style: italic;
+  font-size: 1.6rem;
+  color: var(--color-primary);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.product-card {
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(1, 30, 20, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(1, 30, 20, 0.12);
+}
+.product-card-img {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--color-bg-alt);
+}
+.product-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-card-body {
+  padding: 0.9rem 1rem 1.1rem;
+}
+.product-card-cat {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.product-card h3 {
+  font-size: 0.98rem;
+  color: var(--color-primary);
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+.product-card-desc {
+  font-size: 0.83rem;
+  color: var(--color-text-light);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-loading,
+.product-error {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--color-text-light);
+}
+
+@media (min-width: 700px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "section": "hotellerie",
+  "sectionLabel": "Hôtellerie",
+  "sectionTagline": "Des gammes qui tiennent la rotation, chambre après chambre.",
+  "categories": [
+    {
+      "id": "linge-de-lit",
+      "label": "Linge de lit",
+      "subcategories": [
+        {
+          "id": "draps",
+          "label": "Draps"
+        },
+        {
+          "id": "housses-de-couette",
+          "label": "Housses de couette"
+        }
+      ]
+    },
+    {
+      "id": "linge-de-bain",
+      "label": "Linge de bain",
+      "subcategories": [
+        {
+          "id": "serviettes",
+          "label": "Serviettes"
+        },
+        {
+          "id": "peignoirs",
+          "label": "Peignoirs"
+        }
+      ]
+    },
+    {
+      "id": "accessoires",
+      "label": "Accessoires",
+      "subcategories": [
+        {
+          "id": "sacs-a-linge",
+          "label": "Sacs à linge"
+        },
+        {
+          "id": "chariots",
+          "label": "Chariots"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "drap-plat-percale-blanc",
+      "name": "Drap plat percale blanc",
+      "category": "linge-de-lit",
+      "subcategory": "draps",
+      "image": "assets/picture/Chambre.webp",
+      "shortDescription": "Drap plat en percale de coton, tenue impeccable après blanchisserie intensive.",
+      "description": "Confectionné en percale de coton resserré pour un tombé net et une bonne résistance aux lavages industriels répétés.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "100% coton percale"
+        },
+        {
+          "label": "Grammage",
+          "value": "≈ 130 g/m²"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 60-90°C"
+        }
+      ]
+    },
+    {
+      "id": "drap-housse-percale-blanc",
+      "name": "Drap housse percale blanc",
+      "category": "linge-de-lit",
+      "subcategory": "draps",
+      "image": "assets/picture/Chambre.webp",
+      "shortDescription": "Drap housse à coins renforcés pour un usage quotidien en chambre d'hôtel.",
+      "description": "Élastique ceinturé et coins renforcés pour rester en place malgré les changements de linge fréquents.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "100% coton percale"
+        },
+        {
+          "label": "Tailles",
+          "value": "90 à 180 cm"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 60-90°C"
+        }
+      ]
+    },
+    {
+      "id": "housse-de-couette-satin",
+      "name": "Housse de couette satin de coton",
+      "category": "linge-de-lit",
+      "subcategory": "housses-de-couette",
+      "image": "assets/picture/Chambre.webp",
+      "shortDescription": "Housse de couette en satin de coton, finition haut de gamme pour chambres premium.",
+      "description": "Tissage satin qui apporte brillance légère et douceur, pensé pour les établissements haut de gamme.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "100% coton satin"
+        },
+        {
+          "label": "Fermeture",
+          "value": "Boutons pression"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 60°C"
+        }
+      ]
+    },
+    {
+      "id": "housse-de-couette-percale",
+      "name": "Housse de couette percale unie",
+      "category": "linge-de-lit",
+      "subcategory": "housses-de-couette",
+      "image": "assets/picture/Chambre.webp",
+      "shortDescription": "Version percale, plus économique, pour un usage intensif toutes chambres.",
+      "description": "Alternative robuste et abordable à la satin, conçue pour les rotations fréquentes en blanchisserie.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "100% coton percale"
+        },
+        {
+          "label": "Fermeture",
+          "value": "Rabat intérieur"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 60-90°C"
+        }
+      ]
+    },
+    {
+      "id": "serviette-eponge-500",
+      "name": "Serviette éponge 500 g/m²",
+      "category": "linge-de-bain",
+      "subcategory": "serviettes",
+      "image": "assets/picture/Bain.jpg",
+      "shortDescription": "Serviette éponge dense, absorption élevée, conçue pour un usage hôtelier intensif.",
+      "description": "Bouclette resserrée qui conserve son moelleux après de nombreux cycles de lavage industriel.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "100% coton éponge"
+        },
+        {
+          "label": "Grammage",
+          "value": "500 g/m²"
+        },
+        {
+          "label": "Tailles",
+          "value": "30x50 à 100x150 cm"
+        }
+      ]
+    },
+    {
+      "id": "drap-de-bain-eponge",
+      "name": "Drap de bain éponge",
+      "category": "linge-de-bain",
+      "subcategory": "serviettes",
+      "image": "assets/picture/Bain.jpg",
+      "shortDescription": "Grand format éponge pour chambres et spas d'hôtel.",
+      "description": "Format généreux, séchage rapide, pensé pour accompagner les gammes serviettes en cohérence visuelle.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "100% coton éponge"
+        },
+        {
+          "label": "Grammage",
+          "value": "500 g/m²"
+        },
+        {
+          "label": "Format",
+          "value": "100x150 cm"
+        }
+      ]
+    },
+    {
+      "id": "peignoir-col-chale",
+      "name": "Peignoir col châle",
+      "category": "linge-de-bain",
+      "subcategory": "peignoirs",
+      "image": "assets/picture/Bain.jpg",
+      "shortDescription": "Peignoir hôtelier confortable, coupe classique col châle.",
+      "description": "Coupe ample et ceinture nouée, pensé pour le confort en chambre comme en espace bien-être.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton éponge"
+        },
+        {
+          "label": "Tailles",
+          "value": "S à XL"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 60°C"
+        }
+      ]
+    },
+    {
+      "id": "peignoir-capuche-spa",
+      "name": "Peignoir à capuche spa",
+      "category": "linge-de-bain",
+      "subcategory": "peignoirs",
+      "image": "assets/picture/Bain.jpg",
+      "shortDescription": "Version à capuche pour les espaces spa et bien-être de l'établissement.",
+      "description": "Capuche intégrée et matière absorbante, adapté aux parcours spa et zones humides.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Coton éponge"
+        },
+        {
+          "label": "Tailles",
+          "value": "Unique / S à XL"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavage industriel 60°C"
+        }
+      ]
+    },
+    {
+      "id": "sac-a-linge-toile",
+      "name": "Sac à linge en toile",
+      "category": "accessoires",
+      "subcategory": "sacs-a-linge",
+      "image": "assets/picture/Accessoires.jpg",
+      "shortDescription": "Sac à linge robuste pour la collecte en étage.",
+      "description": "Toile résistante et anses renforcées pour suivre le rythme des rotations de blanchisserie.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Toile coton/polyester"
+        },
+        {
+          "label": "Capacité",
+          "value": "≈ 25 kg"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavable en machine"
+        }
+      ]
+    },
+    {
+      "id": "sac-a-linge-filet",
+      "name": "Sac à linge filet",
+      "category": "accessoires",
+      "subcategory": "sacs-a-linge",
+      "image": "assets/picture/Accessoires.jpg",
+      "shortDescription": "Sac filet pour un tri visuel rapide du linge en cours de traitement.",
+      "description": "Maillage ajouré qui facilite le tri et le passage direct en machine à laver.",
+      "specs": [
+        {
+          "label": "Matière",
+          "value": "Polyester filet"
+        },
+        {
+          "label": "Capacité",
+          "value": "≈ 15 kg"
+        },
+        {
+          "label": "Entretien",
+          "value": "Lavable en machine"
+        }
+      ]
+    },
+    {
+      "id": "chariot-linge-etage",
+      "name": "Chariot à linge d'étage",
+      "category": "accessoires",
+      "subcategory": "chariots",
+      "image": "assets/picture/Accessoires.jpg",
+      "shortDescription": "Chariot compact pour le transport du linge propre et sale en étage.",
+      "description": "Structure roulante compartimentée, pensée pour circuler facilement dans les couloirs.",
+      "specs": [
+        {
+          "label": "Structure",
+          "value": "Métal/toile"
+        },
+        {
+          "label": "Compartiments",
+          "value": "2 à 3"
+        },
+        {
+          "label": "Roues",
+          "value": "Pivotantes silencieuses"
+        }
+      ]
+    },
+    {
+      "id": "chariot-linge-housse",
+      "name": "Chariot à linge avec housse",
+      "category": "accessoires",
+      "subcategory": "chariots",
+      "image": "assets/picture/Accessoires.jpg",
+      "shortDescription": "Version avec housse pour protéger le linge propre pendant le transport.",
+      "description": "Housse amovible qui protège le linge propre de la poussière et des projections en circulation.",
+      "specs": [
+        {
+          "label": "Structure",
+          "value": "Métal/toile"
+        },
+        {
+          "label": "Housse",
+          "value": "Amovible, lavable"
+        },
+        {
+          "label": "Roues",
+          "value": "Pivotantes silencieuses"
+        }
+      ]
+    }
+  ]
+}
