@@ -91,7 +91,7 @@ h2 {
      insuffisant en WCAG AA. On fonce le ton pour rester dans la charte
      tout en restant lisible. */
   color: var(--color-primary);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* Lien d'évitement, visible uniquement au focus clavier */

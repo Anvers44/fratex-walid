@@ -59,7 +59,7 @@
   padding-bottom: 2.5rem;
 }
 .section-title h2 {
-  font-style: italic;
+  font-family: var(--font-body);
   font-size: 1.9rem;
   color: var(--color-primary);
   margin-top: 0.4rem;
@@ -251,10 +251,11 @@
 }
 .about-cta p.section-label {
   color: var(--color-accent-soft);
+  font-weight: 500;
 }
 .about-cta h2 {
-  font-family: var(--font-heading);
-  font-style: italic;
+  font-family: var(--font-body);
+
   font-size: 1.8rem;
   margin: 0.75rem auto 1.5rem;
   max-width: 24ch;
