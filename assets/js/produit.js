@@ -92,11 +92,11 @@ document.addEventListener("DOMContentLoaded", function () {
       var rows = Object.keys(product.specs || {})
         .map(function (key) {
           return (
-            "<tr><th>" +
+            "<dt>" +
             Catalogue.escapeHtml(key) +
-            "</th><td>" +
+            "</dt><dd>" +
             Catalogue.escapeHtml(product.specs[key]) +
-            "</td></tr>"
+            "</dd>"
           );
         })
         .join("");

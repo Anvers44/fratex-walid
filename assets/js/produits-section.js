@@ -1,7 +1,7 @@
 /*
    FRATEX — produits-section.js
-   Logique de la page section produits (produits-section.html) :
-   hero de section, filtres catégorie/sous-catégorie, recherche, grille.
+   Page section produits : hero, onglets univers, rail de catégories
+   illustrées (navigation principale), sous-catégories, recherche, grille.
    Dépend de catalogue.js, chargé avant ce fichier.
 */
 
@@ -18,16 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var els = {
     hero: document.getElementById("section-hero"),
-    heroLabel: document.getElementById("section-hero-label"),
     heroTitle: document.getElementById("section-hero-title"),
     heroDesc: document.getElementById("section-hero-desc"),
     breadcrumb: document.getElementById("breadcrumb-current"),
-    otherSections: document.getElementById("other-sections"),
-    categoryChips: document.getElementById("category-chips"),
+    universeTabs: document.getElementById("universe-tabs"),
+    categoryRail: document.getElementById("category-rail"),
+    railReset: document.getElementById("category-rail-reset"),
     subcategoryBlock: document.getElementById("subcategory-block"),
     subcategoryChips: document.getElementById("subcategory-chips"),
-    resetBtn: document.getElementById("filters-reset"),
     searchInput: document.getElementById("catalogue-search-input"),
+    productsHeading: document.getElementById("products-heading"),
     count: document.getElementById("catalogue-count"),
     grid: document.getElementById("product-grid"),
   };
@@ -40,9 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   Promise.all([Catalogue.loadSection(sectionSlug), Catalogue.loadSections()])
     .then(function (results) {
-      var data = results[0];
-      var sections = results[1];
-      init(data, sections);
+      init(results[0], results[1]);
     })
     .catch(function () {
       root.innerHTML =
@@ -53,17 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.title = data.section.name + " – Produits Fratex";
 
     if (els.hero) {
-      els.hero.style.backgroundImage =
-        "linear-gradient(180deg, rgba(1,30,20,0.35) 0%, rgba(1,30,20,0.82) 100%), url('" +
-        data.section.hero_image +
-        "')";
+      els.hero.style.backgroundImage = "url('" + data.section.hero_image + "')";
     }
     if (els.heroTitle) els.heroTitle.textContent = data.section.name;
     if (els.heroDesc) els.heroDesc.textContent = data.section.description;
     if (els.breadcrumb) els.breadcrumb.textContent = data.section.name;
 
-    if (els.otherSections) {
-      els.otherSections.innerHTML = sections
+    if (els.universeTabs) {
+      els.universeTabs.innerHTML = sections
         .map(function (s) {
           var cls = s.slug === sectionSlug ? "is-current" : "";
           return (
@@ -102,17 +97,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (els.searchInput) els.searchInput.value = state.q;
 
-    renderCategoryChips(data);
+    renderCategoryRail(data);
     renderSubcategoryChips(data);
     renderGrid(data);
 
-    if (els.resetBtn) {
-      els.resetBtn.addEventListener("click", function () {
+    if (els.railReset) {
+      els.railReset.addEventListener("click", function () {
         state.category = "";
         state.subcategory = "";
-        state.q = "";
-        if (els.searchInput) els.searchInput.value = "";
-        renderCategoryChips(data);
+        renderCategoryRail(data);
         renderSubcategoryChips(data);
         renderGrid(data);
         syncUrl();
@@ -128,36 +121,57 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function renderCategoryChips(data) {
-    if (!els.categoryChips) return;
-    var chips = [
-      '<button type="button" class="filter-chip' +
-        (state.category === "" ? " is-active" : "") +
-        '" data-cat="">Toutes les catégories</button>',
-    ];
-    data.categories.forEach(function (cat) {
-      chips.push(
-        '<button type="button" class="filter-chip' +
-          (state.category === cat.slug ? " is-active" : "") +
+  function productCountFor(data, categorySlug) {
+    return data.products.filter(function (p) {
+      return p.category === categorySlug;
+    }).length;
+  }
+
+  function renderCategoryRail(data) {
+    if (!els.categoryRail) return;
+
+    els.categoryRail.innerHTML = data.categories
+      .map(function (cat) {
+        var active = state.category === cat.slug ? " is-active" : "";
+        return (
+          '<button type="button" class="category-rail-card' +
+          active +
           '" data-cat="' +
           cat.slug +
+          '" aria-pressed="' +
+          (state.category === cat.slug) +
           '">' +
+          '<img src="' +
+          Catalogue.escapeHtml(cat.image) +
+          '" alt="" loading="lazy" width="400" height="500" />' +
+          '<span class="category-rail-card-body">' +
+          "<h3>" +
           Catalogue.escapeHtml(cat.name) +
-          "</button>",
-      );
-    });
-    els.categoryChips.innerHTML = chips.join("");
+          "</h3>" +
+          "<span>" +
+          productCountFor(data, cat.slug) +
+          " produits</span>" +
+          "</span>" +
+          "</button>"
+        );
+      })
+      .join("");
 
-    els.categoryChips.querySelectorAll(".filter-chip").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        state.category = btn.getAttribute("data-cat");
-        state.subcategory = "";
-        renderCategoryChips(data);
-        renderSubcategoryChips(data);
-        renderGrid(data);
-        syncUrl();
+    els.categoryRail
+      .querySelectorAll(".category-rail-card")
+      .forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var slug = btn.getAttribute("data-cat");
+          state.category = state.category === slug ? "" : slug;
+          state.subcategory = "";
+          renderCategoryRail(data);
+          renderSubcategoryChips(data);
+          renderGrid(data);
+          syncUrl();
+        });
       });
-    });
+
+    if (els.railReset) els.railReset.hidden = !state.category;
   }
 
   function renderSubcategoryChips(data) {
@@ -178,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var chips = [
       '<button type="button" class="filter-chip' +
         (state.subcategory === "" ? " is-active" : "") +
-        '" data-sub="">Toutes</button>',
+        '" data-sub="">Toutes les sous-catégories</button>',
     ];
     cat.subcategories.forEach(function (sub) {
       chips.push(
@@ -224,6 +238,13 @@ document.addEventListener("DOMContentLoaded", function () {
       return true;
     });
 
+    if (els.productsHeading) {
+      var catName = state.category
+        ? Catalogue.categoryName(data, state.category)
+        : "";
+      els.productsHeading.textContent = catName || "Tous les produits";
+    }
+
     if (els.count) {
       els.count.innerHTML =
         "<strong>" +
@@ -235,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!els.grid) return;
     if (!results.length) {
       els.grid.innerHTML =
-        '<div class="catalogue-empty"><h3>Aucun produit trouvé</h3><p>Essayez un autre filtre ou une autre recherche.</p></div>';
+        '<div class="catalogue-empty"><h3>Aucun produit trouvé</h3><p>Essayez une autre catégorie ou une autre recherche.</p></div>';
       return;
     }
     els.grid.innerHTML = results

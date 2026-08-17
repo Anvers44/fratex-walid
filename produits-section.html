@@ -72,67 +72,77 @@
             <span id="breadcrumb-current"></span>
           </nav>
 
-          <!-- NAVIGATION RAPIDE ENTRE UNIVERS -->
-          <div class="other-sections" id="other-sections"></div>
-
-          <!-- BARRE D'OUTILS -->
-          <div class="catalogue-toolbar">
-            <div class="catalogue-search">
-              <svg
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <circle
-                  cx="11"
-                  cy="11"
-                  r="7"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                />
-                <path
-                  d="M20 20l-3.5-3.5"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                />
-              </svg>
-              <label class="visually-hidden" for="catalogue-search-input"
-                >Rechercher un produit</label
-              >
-              <input
-                type="search"
-                id="catalogue-search-input"
-                placeholder="Rechercher un produit…"
-              />
-            </div>
-            <p class="catalogue-count" id="catalogue-count"></p>
-          </div>
-
-          <!-- FILTRES -->
-          <div class="filters-block">
-            <p class="filters-label">Catégories</p>
-            <div class="filter-chips" id="category-chips"></div>
-
-            <div id="subcategory-block" hidden>
-              <p class="filters-label">Sous-catégories</p>
-              <div
-                class="filter-chips subfilter-chips"
-                id="subcategory-chips"
-              ></div>
-            </div>
-
-            <button type="button" class="filters-reset" id="filters-reset">
-              Réinitialiser les filtres
-            </button>
-          </div>
+          <!-- ONGLETS UNIVERS (navigation entre les 5 sections) -->
+          <nav
+            class="universe-tabs"
+            id="universe-tabs"
+            aria-label="Autres univers"
+          ></nav>
         </div>
+
+        <!-- RAIL DE CATÉGORIES ILLUSTRÉES -->
+        <section class="category-rail-section">
+          <div class="container">
+            <div class="rail-header">
+              <p class="section-label">Parcourir par catégorie</p>
+              <button
+                type="button"
+                class="rail-reset-link"
+                id="category-rail-reset"
+                hidden
+              >
+                Voir toutes les catégories
+              </button>
+            </div>
+            <div id="category-rail" class="category-rail"></div>
+          </div>
+        </section>
 
         <!-- GRILLE PRODUITS -->
         <section class="products-section">
           <div class="container">
+            <div class="products-header">
+              <div>
+                <h2 id="products-heading">Tous les produits</h2>
+                <p class="catalogue-count" id="catalogue-count"></p>
+              </div>
+              <div class="catalogue-search">
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <circle
+                    cx="11"
+                    cy="11"
+                    r="7"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M20 20l-3.5-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <label class="visually-hidden" for="catalogue-search-input"
+                  >Rechercher un produit</label
+                >
+                <input
+                  type="search"
+                  id="catalogue-search-input"
+                  placeholder="Rechercher un produit…"
+                />
+              </div>
+            </div>
+
+            <div id="subcategory-block" class="subcategory-block" hidden>
+              <div class="filter-chips" id="subcategory-chips"></div>
+            </div>
+
             <div id="product-grid" class="product-grid">
               <p class="catalogue-loading">Chargement des produits…</p>
             </div>

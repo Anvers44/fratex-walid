@@ -1,0 +1,247 @@
+{
+  "section": {
+    "slug": "sante-soin",
+    "name": "Santé & soin",
+    "tagline": "Des textiles fiables pour les contraintes du soin.",
+    "description": "Literie médicalisée, linge de protection et textile de soin conçus pour l'hygiène, la résistance et le renouvellement fréquent.",
+    "hero_image": "assets/picture/texture.jpg"
+  },
+  "categories": [
+    {
+      "slug": "literie-medicalisee",
+      "name": "Literie médicalisée",
+      "description": "Draps et alèses adaptés aux contraintes des établissements de santé.",
+      "image": "assets/picture/texture.jpg",
+      "subcategories": [
+        {
+          "slug": "draps-medicalises",
+          "name": "Draps médicalisés"
+        },
+        {
+          "slug": "aleses",
+          "name": "Alèses"
+        }
+      ]
+    },
+    {
+      "slug": "linge-de-protection",
+      "name": "Linge de protection",
+      "description": "Protections lit et literie pour l'hygiène et la sécurité des patients.",
+      "image": "assets/picture/conton.webp",
+      "subcategories": [
+        {
+          "slug": "housses-impermeables",
+          "name": "Housses imperméables"
+        },
+        {
+          "slug": "alaises-jetables",
+          "name": "Alaises à usage unique"
+        }
+      ]
+    },
+    {
+      "slug": "textile-de-soin",
+      "name": "Textile de soin",
+      "description": "Serviettes et gants de toilette pensés pour les gestes de soin quotidiens.",
+      "image": "assets/picture/Bain.jpg",
+      "subcategories": [
+        {
+          "slug": "serviettes-de-soin",
+          "name": "Serviettes de soin"
+        },
+        {
+          "slug": "gants-de-toilette",
+          "name": "Gants de toilette"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "san-lit-001",
+      "slug": "san-lit-001",
+      "name": "Drap médicalisé coton",
+      "category": "literie-medicalisee",
+      "subcategory": "draps-medicalises",
+      "image": "assets/picture/Bain.jpg",
+      "short_description": "Drap en coton résistant aux lavages désinfectants fréquents en milieu médical.",
+      "description": "Drap en coton résistant aux lavages désinfectants fréquents en milieu médical. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "170 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "medicalise"]
+    },
+    {
+      "id": "san-lit-002",
+      "slug": "san-lit-002",
+      "name": "Drap médicalisé polycoton",
+      "category": "literie-medicalisee",
+      "subcategory": "draps-medicalises",
+      "image": "assets/picture/cuisine.jpg",
+      "short_description": "Drap polycoton, séchage rapide et bonne tenue en blanchisserie hospitalière.",
+      "description": "Drap polycoton, séchage rapide et bonne tenue en blanchisserie hospitalière. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Polycoton",
+        "Grammage": "160 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["polycoton", "medicalise"]
+    },
+    {
+      "id": "san-lit-003",
+      "slug": "san-lit-003",
+      "name": "Alèse plate coton",
+      "category": "literie-medicalisee",
+      "subcategory": "aleses",
+      "image": "assets/picture/Accessoires.jpg",
+      "short_description": "Alèse plate en coton pour la protection du matelas en usage courant.",
+      "description": "Alèse plate en coton pour la protection du matelas en usage courant. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton",
+        "Grammage": "180 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "alese"]
+    },
+    {
+      "id": "san-lit-004",
+      "slug": "san-lit-004",
+      "name": "Alèse housse imperméable",
+      "category": "literie-medicalisee",
+      "subcategory": "aleses",
+      "image": "assets/picture/texture.jpg",
+      "short_description": "Alèse housse avec face imperméable, protection renforcée du matelas.",
+      "description": "Alèse housse avec face imperméable, protection renforcée du matelas. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton / membrane imperméable",
+        "Entretien": "Lavage désinfectant"
+      },
+      "tags": ["impermeable", "alese"]
+    },
+    {
+      "id": "san-prot-001",
+      "slug": "san-prot-001",
+      "name": "Housse de matelas imperméable",
+      "category": "linge-de-protection",
+      "subcategory": "housses-impermeables",
+      "image": "assets/picture/conton.webp",
+      "short_description": "Housse de matelas imperméable et respirante pour les environnements de soin.",
+      "description": "Housse de matelas imperméable et respirante pour les environnements de soin. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton / membrane imperméable",
+        "Entretien": "Lavage désinfectant"
+      },
+      "tags": ["impermeable", "protection"]
+    },
+    {
+      "id": "san-prot-002",
+      "slug": "san-prot-002",
+      "name": "Housse d'oreiller imperméable",
+      "category": "linge-de-protection",
+      "subcategory": "housses-impermeables",
+      "image": "assets/picture/geste.jpg",
+      "short_description": "Housse d'oreiller imperméable, barrière hygiénique en milieu de soin.",
+      "description": "Housse d'oreiller imperméable, barrière hygiénique en milieu de soin. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton / membrane imperméable",
+        "Entretien": "Lavage désinfectant"
+      },
+      "tags": ["impermeable", "protection"]
+    },
+    {
+      "id": "san-prot-003",
+      "slug": "san-prot-003",
+      "name": "Alaise à usage unique",
+      "category": "linge-de-protection",
+      "subcategory": "alaises-jetables",
+      "image": "assets/picture/Chambre.webp",
+      "short_description": "Alaise à usage unique pour un besoin de protection ponctuel et hygiénique.",
+      "description": "Alaise à usage unique pour un besoin de protection ponctuel et hygiénique. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Ouate cellulose / film plastique",
+        "Usage": "Unique"
+      },
+      "tags": ["jetable", "protection"]
+    },
+    {
+      "id": "san-prot-004",
+      "slug": "san-prot-004",
+      "name": "Alaise absorbante renforcée",
+      "category": "linge-de-protection",
+      "subcategory": "alaises-jetables",
+      "image": "assets/picture/Bain.jpg",
+      "short_description": "Alaise à usage unique à capacité d'absorption renforcée.",
+      "description": "Alaise à usage unique à capacité d'absorption renforcée. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Ouate cellulose / film plastique",
+        "Usage": "Unique"
+      },
+      "tags": ["jetable", "protection"]
+    },
+    {
+      "id": "san-soin-001",
+      "slug": "san-soin-001",
+      "name": "Serviette de soin coton",
+      "category": "textile-de-soin",
+      "subcategory": "serviettes-de-soin",
+      "image": "assets/picture/cuisine.jpg",
+      "short_description": "Serviette de soin en coton, format adapté aux gestes d'hygiène quotidiens.",
+      "description": "Serviette de soin en coton, format adapté aux gestes d'hygiène quotidiens. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton éponge",
+        "Grammage": "400 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "soin"]
+    },
+    {
+      "id": "san-soin-002",
+      "slug": "san-soin-002",
+      "name": "Serviette de soin microfibre",
+      "category": "textile-de-soin",
+      "subcategory": "serviettes-de-soin",
+      "image": "assets/picture/Accessoires.jpg",
+      "short_description": "Serviette microfibre, séchage rapide et légèreté pour un usage répété.",
+      "description": "Serviette microfibre, séchage rapide et légèreté pour un usage répété. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Microfibre",
+        "Grammage": "300 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["microfibre", "soin"]
+    },
+    {
+      "id": "san-soin-003",
+      "slug": "san-soin-003",
+      "name": "Gant de toilette coton",
+      "category": "textile-de-soin",
+      "subcategory": "gants-de-toilette",
+      "image": "assets/picture/texture.jpg",
+      "short_description": "Gant de toilette en coton éponge, format standard pour la toilette quotidienne.",
+      "description": "Gant de toilette en coton éponge, format standard pour la toilette quotidienne. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Coton éponge",
+        "Grammage": "400 g/m²",
+        "Coloris": "Blanc"
+      },
+      "tags": ["coton", "gant"]
+    },
+    {
+      "id": "san-soin-004",
+      "slug": "san-soin-004",
+      "name": "Gant de toilette jetable",
+      "category": "textile-de-soin",
+      "subcategory": "gants-de-toilette",
+      "image": "assets/picture/conton.webp",
+      "short_description": "Gant de toilette à usage unique pour les besoins d'hygiène ponctuels.",
+      "description": "Gant de toilette à usage unique pour les besoins d'hygiène ponctuels. Confectionné par l'atelier Fratex pour un usage professionnel intensif, avec un contrôle qualité à chaque étape de fabrication.",
+      "specs": {
+        "Matière": "Non-tissé",
+        "Usage": "Unique"
+      },
+      "tags": ["jetable", "gant"]
+    }
+  ]
+}

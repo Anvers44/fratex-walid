@@ -3,13 +3,13 @@
     "slug": "hotellerie",
     "name": "Hôtellerie",
     "tagline": "Le linge qui tient la cadence de vos rotations.",
-    "image": "assets/picture/Chambre.webp"
+    "image": "assets/picture/hotellerie.png"
   },
   {
     "slug": "restauration",
     "name": "Restauration",
     "tagline": "Le textile de salle et de cuisine, prêt pour le rythme du service.",
-    "image": "assets/picture/cuisine.jpg"
+    "image": "assets/picture/nappes.jpg"
   },
   {
     "slug": "maison",
@@ -21,12 +21,12 @@
     "slug": "sante-soin",
     "name": "Santé & soin",
     "tagline": "Des textiles fiables pour les contraintes du soin.",
-    "image": "assets/picture/texture.jpg"
+    "image": "assets/picture/sante.webp"
   },
   {
     "slug": "evenement",
     "name": "Événement",
     "tagline": "Une réponse textile souple pour vos réceptions.",
-    "image": "assets/picture/geste.jpg"
+    "image": "assets/picture/Image_fx (2-1).jpg"
   }
 ]

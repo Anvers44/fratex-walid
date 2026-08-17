@@ -1,167 +1,176 @@
 /*
    FRATEX — produits.css
-   Styles propres à la page d'accueil produits (produits.html) :
-   vue d'ensemble des 5 univers (sections).
-   Charge base.css au préalable pour les variables, le header et le footer.
+   Page d'accueil produits : intro typographique + index éditorial
+   des 5 univers en lignes plein écran alternées (au lieu d'une grille
+   de cartes). Charge base.css pour les variables, le header et le footer.
 */
 
-/* HERO */
-.produits-hero {
-  position: relative;
-  min-height: 42vh;
-  display: flex;
-  align-items: flex-end;
-  color: #fff;
-  background: var(--color-primary) url("../picture/hero.jpg") center/cover
-    no-repeat;
+/* INTRO — pas d'image, uniquement de la typographie */
+.produits-intro {
+  padding: 4rem 0 3rem;
+  background: var(--color-bg);
 }
-.produits-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(1, 30, 20, 0.35) 0%,
-    rgba(1, 30, 20, 0.82) 100%
-  );
+.produits-intro .section-label {
+  margin-bottom: 1rem;
 }
-.produits-hero-content {
-  position: relative;
-  z-index: 1;
-  padding: 3rem 0 2.5rem;
-}
-.produits-hero .section-label {
-  color: var(--color-accent-soft);
-}
-.produits-hero h1 {
-  color: #fff;
+.produits-intro h1 {
   font-family: var(--font-heading);
   font-style: italic;
-  font-size: 2.1rem;
-  margin: 0.5rem 0 0.75rem;
-  max-width: 18ch;
+  color: var(--color-primary);
+  font-size: 2.4rem;
+  line-height: 1.15;
+  max-width: 14ch;
+  margin-bottom: 1.25rem;
 }
-.produits-hero p {
-  max-width: 50ch;
-  opacity: 0.9;
-  font-size: 1rem;
+.produits-intro-text {
+  max-width: 52ch;
+  color: var(--color-text-light);
+  font-size: 1.05rem;
 }
 
 @media (min-width: 700px) {
-  .produits-hero {
-    min-height: 46vh;
+  .produits-intro {
+    padding: 5.5rem 0 3.5rem;
   }
-  .produits-hero h1 {
-    font-size: 3rem;
+  .produits-intro h1 {
+    font-size: 3.6rem;
+    max-width: 16ch;
   }
 }
 
-/* GRILLE DES UNIVERS */
-.sections-overview {
-  padding: 3rem 0 4rem;
+/* INDEX ÉDITORIAL — lignes plein écran, alternées */
+.universe-index {
+  border-top: 1px solid #e7ded0;
 }
-.sections-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
-}
-.section-card {
+
+.universe-row {
   position: relative;
-  aspect-ratio: 4 / 3;
-  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e7ded0;
+  overflow: hidden;
+  color: var(--color-text);
+  transition: background 0.25s ease;
+}
+.universe-row:hover {
+  background: var(--color-bg-alt);
+}
+
+.universe-row-media {
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   background: var(--color-bg-alt);
-  display: block;
 }
-.section-card img {
+.universe-row-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
 }
-.section-card:hover img {
-  transform: scale(1.05);
-}
-.section-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.65) 100%
-  );
-}
-.section-card-body {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  padding: 1.25rem;
-  color: #fff;
-}
-.section-card-body h2 {
-  font-family: var(--font-heading);
-  font-style: italic;
-  font-size: 1.5rem;
-  margin-bottom: 0.35rem;
-}
-.section-card-body p {
-  font-size: 0.85rem;
-  opacity: 0.9;
-  max-width: 32ch;
-}
-.section-card-arrow {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease;
-}
-.section-card:hover .section-card-arrow {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
-  transform: rotate(45deg);
-}
-.section-card-arrow svg {
-  width: 16px;
-  height: 16px;
-  stroke: #fff;
+.universe-row:hover .universe-row-media img {
+  transform: scale(1.04);
 }
 
-@media (min-width: 700px) {
-  .sections-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .section-card:first-child {
-    grid-column: span 2;
-    aspect-ratio: 16 / 7;
-  }
+.universe-row-content {
+  position: relative;
+  padding: 1.75rem 1.25rem 2.25rem;
+}
+.universe-row-num {
+  position: absolute;
+  right: 1rem;
+  top: -1.6rem;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 5.5rem;
+  color: var(--color-primary);
+  opacity: 0.07;
+  line-height: 1;
+  pointer-events: none;
+}
+.universe-row-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.universe-row-head span.universe-row-index {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--color-accent);
+  font-size: 1rem;
+}
+.universe-row-content h2 {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--color-primary);
+  font-size: 1.7rem;
+}
+.universe-row-content p {
+  color: var(--color-text-light);
+  max-width: 42ch;
+  margin-bottom: 1rem;
+}
+
+.universe-row-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+}
+.universe-row-link svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  transition: transform 0.25s ease;
+}
+.universe-row:hover .universe-row-link svg {
+  transform: translateX(4px);
+}
+
+.universe-index-loading,
+.universe-index-error {
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--color-text-light);
 }
 
 @media (min-width: 900px) {
-  .sections-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .universe-row {
+    flex-direction: row;
+    min-height: 62vh;
   }
-  .section-card:first-child {
-    grid-column: span 3;
+  .universe-row:nth-child(even) {
+    flex-direction: row-reverse;
   }
-}
-
-.sections-loading,
-.sections-error {
-  text-align: center;
-  padding: 3rem 0;
-  color: var(--color-text-light);
+  .universe-row-media {
+    width: 55%;
+    aspect-ratio: auto;
+  }
+  .universe-row-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 4.5rem;
+  }
+  .universe-row-num {
+    right: auto;
+    left: 3rem;
+    top: 1.5rem;
+    font-size: 8rem;
+  }
+  .universe-row:nth-child(even) .universe-row-num {
+    left: auto;
+    right: 3rem;
+  }
+  .universe-row-content h2 {
+    font-size: 2.3rem;
+  }
+  .universe-row-content p {
+    font-size: 1.02rem;
+  }
 }
