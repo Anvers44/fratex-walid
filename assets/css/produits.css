@@ -1,13 +1,35 @@
 /*
    FRATEX — produits.css
-   Page d'accueil produits : intro typographique + index éditorial
-   des 5 univers en lignes plein écran alternées (au lieu d'une grille
-   de cartes). Charge base.css pour les variables, le header et le footer.
+   Page d'accueil produits : intro + 5 univers présentés comme une
+   séquence de panneaux plein écran ("un scroll = un univers"), avec
+   effet de révélation et navigation par points.
+   Charge base.css pour les variables, le header et le footer.
+   --header-h est mis à jour en JS (produits-index.js) avec la hauteur
+   réelle du header sticky, pour caler chaque panneau exactement sur
+   l'espace visible restant.
 */
 
-/* INTRO — pas d'image, uniquement de la typographie */
+html {
+  scroll-snap-type: y proximity;
+}
+
+.fullpage-panels {
+  position: relative;
+}
+
+.produits-panel {
+  min-height: calc(100vh - var(--header-h, 72px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* INTRO */
 .produits-intro {
-  padding: 4rem 0 3rem;
+  padding: 3rem 0;
   background: var(--color-bg);
 }
 .produits-intro .section-label {
@@ -29,35 +51,81 @@
 }
 
 @media (min-width: 700px) {
-  .produits-intro {
-    padding: 5.5rem 0 3.5rem;
-  }
   .produits-intro h1 {
-    font-size: 3.6rem;
+    font-size: 4rem;
     max-width: 16ch;
+  }
+  .produits-intro-text {
+    font-size: 1.15rem;
   }
 }
 
-/* INDEX ÉDITORIAL — lignes plein écran, alternées */
+/* INDICATEUR DE SCROLL — visible uniquement sur le panneau d'intro */
+.scroll-cue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-primary);
+  margin-top: 2.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.scroll-cue.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.scroll-cue svg {
+  width: 20px;
+  height: 20px;
+  animation: scrollCueBounce 1.8s ease-in-out infinite;
+}
+@keyframes scrollCueBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(7px);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue svg {
+    animation: none;
+  }
+}
+
+/* INDEX ÉDITORIAL — un panneau plein écran par univers */
 .universe-index {
   border-top: 1px solid #e7ded0;
 }
 
 .universe-row {
-  position: relative;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #e7ded0;
   overflow: hidden;
   color: var(--color-text);
-  transition: background 0.25s ease;
+  background: var(--color-bg);
+  transition: background 0.3s ease;
 }
 .universe-row:hover {
   background: var(--color-bg-alt);
 }
 
 .universe-row-media {
-  aspect-ratio: 16 / 10;
+  position: relative;
+  flex: 1 1 45%;
+  min-height: 0;
   overflow: hidden;
   background: var(--color-bg-alt);
 }
@@ -65,7 +133,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition:
+    transform 4s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.8s ease;
+  opacity: 0;
+  transform: scale(1.15);
+}
+.universe-row.is-active .universe-row-media img {
+  opacity: 1;
+  transform: scale(1);
 }
 .universe-row:hover .universe-row-media img {
   transform: scale(1.04);
@@ -73,7 +149,20 @@
 
 .universe-row-content {
   position: relative;
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 1.75rem 1.25rem 2.25rem;
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease 0.15s,
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+}
+.universe-row.is-active .universe-row-content {
+  opacity: 1;
+  transform: translateY(0);
 }
 .universe-row-num {
   position: absolute;
@@ -141,20 +230,11 @@
 @media (min-width: 900px) {
   .universe-row {
     flex-direction: row;
-    min-height: 62vh;
   }
   .universe-row:nth-child(even) {
     flex-direction: row-reverse;
   }
-  .universe-row-media {
-    width: 55%;
-    aspect-ratio: auto;
-  }
   .universe-row-content {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 3rem 4.5rem;
   }
   .universe-row-num {
@@ -172,5 +252,48 @@
   }
   .universe-row-content p {
     font-size: 1.02rem;
+  }
+}
+
+/* NAVIGATION PAR POINTS — desktop uniquement */
+.panel-dots {
+  display: none;
+}
+@media (min-width: 900px) {
+  .panel-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    position: fixed;
+    right: 1.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 90;
+  }
+  .panel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1.5px solid var(--color-primary);
+    opacity: 0.45;
+    cursor: pointer;
+    padding: 0;
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      background 0.25s ease;
+  }
+  .panel-dot span {
+    display: none;
+  }
+  .panel-dot:hover {
+    opacity: 0.8;
+  }
+  .panel-dot.is-active {
+    opacity: 1;
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: scale(1.35);
   }
 }
