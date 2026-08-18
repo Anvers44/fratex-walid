@@ -9,16 +9,18 @@
    l'espace visible restant.
 */
 
-html {
-  scroll-snap-type: y proximity;
-}
-
 .fullpage-panels {
   position: relative;
+  height: calc(100vh - var(--header-h, 72px));
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .produits-panel {
-  min-height: calc(100vh - var(--header-h, 72px));
+  height: calc(100vh - var(--header-h, 72px));
   display: flex;
   flex-direction: column;
   justify-content: center;
